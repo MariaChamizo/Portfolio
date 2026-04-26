@@ -1,0 +1,40 @@
+{
+    "ilustraciones": [
+        { 
+        "nombre": "portátil", 
+        "imagen": "../assets/img/sobre mi/PORTATIL.svg" 
+        },
+        { 
+        "nombre": "café en taza de cristal", 
+        "imagen": "../assets/img/sobre mi/CAFÉ EN TAZA DE CRISTAL.svg" 
+        },
+        { 
+        "nombre": "vela aromática de café o canela", 
+        "imagen": "../assets/img/sobre mi/VELA CAFE.svg" 
+        },
+        { 
+        "nombre": "musica", 
+        "imagen": "../assets/img/sobre mi/CASCOS.svg" 
+        },
+        { 
+        "nombre": "calcetines divertidos", 
+        "imagen": "../assets/img/sobre mi/CALCETINES.svg" 
+        },
+        { 
+        "nombre": "botella de agua", 
+        "imagen": "../assets/img/sobre mi/BOTELLA.svg" 
+        },
+        { 
+        "nombre": "cuaderno lleno de pegatinas", 
+        "imagen": "../assets/img/sobre mi/CUADERNO.svg" 
+        },
+        { 
+        "nombre": "gafas", 
+        "imagen": "../assets/img/sobre mi/GAFAS.svg" 
+        },
+        { 
+        "nombre": "pinza para el pelo", 
+        "imagen": "../assets/img/sobre mi/PINZA.svg" 
+        }
+    ]
+}

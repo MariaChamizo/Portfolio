@@ -1,0 +1,88 @@
+$fondo: #FDFDFD;
+$negro: #232323;
+$acento: #FF0068;
+
+$tittle: "Bebas Neue", sans-serif;
+$body: "Poppins", sans-serif;
+
+.h1 {
+    font-family: $tittle;
+    font-size: 500px;
+    font-style: normal;
+}
+
+.h2 {
+    font-family: $tittle;
+    font-size: 128px;
+    line-height: 110px;
+    font-style: normal;
+}
+
+.h3-regular {
+    font-family: $body;
+    font-size: 32px;
+    line-height: 32px;
+    font-style: normal;
+}
+
+.h3-bold {
+    font-family: $body;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    font-style: normal;
+}
+
+.h4-regular {
+    font-family: $body;
+    font-size: 24px;
+    line-height: 16px;
+    font-style: normal;
+}
+
+.h4-bold {
+    font-family: $body;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 16px;
+    font-style: normal;
+}
+
+.h5 {
+    font-family: $body;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+}
+
+.p-regular {
+    font-family: $body;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    color: $negro;
+}
+.p-regular-rosa{
+    font-family: $body;
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    color: $acento;
+    text-decoration: none;
+}
+
+.p-bold {
+    font-family: $body;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    font-style: normal;
+}
+
+.small {
+    font-family: $body;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    font-style: normal;
+}

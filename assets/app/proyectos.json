@@ -1,0 +1,54 @@
+{
+    "proyectos": [
+        {
+            "titulo": "Manifiesto de Diseño",
+            "año": "2024",
+            "imagen": "../assets/img/proyectos/manifiesto diseño/letras.jpg"
+        },
+        {
+            "titulo": "Identidad Visual Fotocopyarte",
+            "año": "2025",
+            "imagen": "../assets/img/proyectos/fotocopyarte/fotocopyportfolio.png"
+        },
+        {
+            "titulo": "Pósters Biennale de la Danse de Lyon",
+            "año": "2025",
+            "imagen": "../assets/img/proyectos/biennale/los3.png"
+        },
+        {
+            "titulo": "Vuelta al Mundo en 8 Pliegos",
+            "año": "2024",
+            "imagen": "../assets/img/proyectos/vuelta al mundo/1.jpg"
+        },
+         {
+            "titulo": "Fanzine del Tiempo (MNAD)",
+            "año": "2026",
+            "imagen": "../assets/img/proyectos/sin foto.png"
+        },
+        {
+            "titulo": "Visuales FW M26",
+            "año": "2026",
+            "imagen": "../assets/img/proyectos/sin foto.png"
+        },
+        {
+            "titulo": "Amapola",
+            "año": "2026",
+            "imagen": "../assets/img/proyectos/sin foto.png"
+        },
+        {
+            "titulo": "Pasaporte de Barrio",
+            "año": "2026",
+            "imagen": "../assets/img/proyectos/pasaporte de barrio/panaderia.png"
+        },
+        {
+            "titulo": "Fábrica de la Desinformación",
+            "año": "2026",
+            "imagen": "../assets/img/proyectos/desinformación/infografia.png"
+        },
+        {
+            "titulo": "Catalalata",
+            "año": "2024",
+            "imagen": "../assets/img/proyectos/catalalata/catalalata 1.png"
+        } 
+    ]
+}

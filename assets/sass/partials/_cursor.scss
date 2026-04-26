@@ -1,0 +1,21 @@
+//Aquí me he ayudado de la IA para hacer la base xq no tenia ni idea de como plantearlo
+* {
+    cursor: none !important;
+}
+.cursor-superchuli {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-color: $acento;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,43 @@
+footer {
+    background-color: $acento;
+    overflow: hidden; 
+    width: 100vw; 
+    position: fixed;
+    display: flex;
+    bottom: 0;         
+    left: 0;           
+    width: 100%;      
+    z-index: 9999;
+
+    .footer-marquee {
+        display: flex; 
+        width: max-content; 
+        padding: 1rem 0;
+
+        &:hover .marquee-contenido {
+            animation-play-state: paused;
+        }
+        .marquee-contenido {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0; 
+            gap: 3rem; 
+            padding-right: 3rem; 
+            animation: moverMarquee 15s linear infinite;
+            a{
+                text-decoration: none;
+                color: $negro;
+                &:hover{
+                    color: $fondo;
+                }
+            }
+        }
+    
+    }
+    
+}
+
+@keyframes moverMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } 
+}

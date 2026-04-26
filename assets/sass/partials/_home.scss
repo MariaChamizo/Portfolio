@@ -1,0 +1,131 @@
+
+//he tenido que retocar alguna cosilla con ia xq me daba problemas
+.home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .capa2-letrasgigantes {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+
+        .h1 {
+            font-size: clamp(140px, 28vw, 600px);
+            line-height: 0.85;
+            width: 100%;
+            display: flex;
+            justify-content: center;   
+            align-items: flex-end;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            pointer-events: auto;     
+            letter-spacing: 1rem;
+            &:hover {
+                    color: $acento;
+                }
+
+            .silaba {
+                display: inline-block;
+                cursor: pointer;
+                will-change: transform;
+                color: $negro;
+            }
+        }
+    }
+    .info-block {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 20;
+    }
+
+    .info-sobremi-AMA {
+        bottom: 0;
+        left: 2vw;
+        width: 28vw;
+        padding-bottom: 2rem;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-left: 25%;
+            text-decoration: none;
+            color: $negro;
+            .h3-regular{
+                font-size: 32px;
+                line-height: 32px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        .foto-maria {
+            width: 25rem;
+            height: 25rem;      
+            object-fit: cover; 
+            object-position: center center; 
+            flex-shrink: 0;
+            margin-bottom: 2.3rem;
+        }
+        h3 { margin: 0; }
+    }
+
+    .info-roles-PO {
+        left: 53%;
+        width: 33%;
+        transform: translateX(-50%);
+        top: 0rem;
+        text-align: left;
+
+        .roles-lista {
+            list-style: none;
+            padding: 0;
+            margin-left: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            .h4-bold{
+                text-transform: uppercase;
+                font-weight: 650;
+            }
+            .h4-regular{
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+
+        li { margin: 0; }
+        h4 { margin: 0; }
+    }
+
+    .info-lugar-LA {
+        bottom: 0;
+        display: flex;
+        margin-bottom: 15% ;
+        right: 10vw;
+        padding-bottom: 2rem;
+        text-align: right;
+
+        .lugar-lista {
+            list-style: none;
+            padding: 0;
+            margin-right: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            text-transform: uppercase;
+
+
+        }
+
+        li { margin: 0; }
+        h4 { margin: 0; }
+    }
+}

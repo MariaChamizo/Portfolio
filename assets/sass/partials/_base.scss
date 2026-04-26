@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding-right: 2.25rem;
+    overflow: hidden;
+    background-color: $fondo;
+}
+
+[data-barba="wrapper"] {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main[data-barba="container"] {
+    flex: 1;
+    min-height: 0;   
+}
