@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-    <!-- cosita de arriba en la pestaña-->
-    <title>Home | Amapola</title>
+        
+    <title>Proyectos | Amapola</title>
     <link rel="icon" href="../assets/img/logo.svg" >
 
-    <!-- Iconos-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
 </head>
 <body>
-    <!-- cusor superchuli -->
+    <div id="pantalla-carga-inicio"></div> 
+
     <div class="cursor-superchuli"></div>
 
+    <div data-barba="wrapper"> 
        <header>
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
                     <svg id="logo-animado" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1194.51 1107.26">
                         <g id="Capa_2-2" data-name="Capa 2">
                             <path d="M271.21,373.31c3.34,16.44-10.55,40.29-33.32,42.55-71.93,7.14-55.93-38.62-138.41,12.29-62.23,36.46-100.15,127.66-27.93,173.42,23.54,24.07,61.36,21.61,77.68,51.83,15.03,1.58,38.57-.53,54.22,2.7,64.69,23.55,70.19,18.78,129.66,15.63,78.19-.18,55.49-100.28,159.88-106.52,7.94-.41,18.59,12.92,20.21,19.62,2.33,9.62-2.82,20.53-5.94,30.35-9.57,62.49-119.9,48.9-126.82,91.5-12.98,46.59-32.85,95.15-34.15,143.73,0,0,.02,51.21.02,51.21,0,2.66,4.3,8.36,2.9,10.04l-8.12,9.79c34.12,38.21,10.96,50.51,51.38,99.4,6.72,8.13,10.54,17.07,10.6,27.05,43.53,20.34,76.27,35.92,127.75,18.07,83.03-29.23,155.66-98.17,188.35-173.01,22.47-34.57,18.67-67.49,2.3-100.53-3.04-8.05-12.77-16.79-8.66-26.81,7.01-17.08,4.68-29.91-4.2-46.83l12.11-35.76c5.1-15.06,15.82-23.36,34.35-21.8,16.81,1.41,18.26,19.68,20.95,32.64,7.35,31.51,13.16,63.22,6.53,95.19-36.25,47.29,40.29,71.73,74.58,89.44,72.73,38.31,31.3,8.34,95.14,29.84,84.62,20.6,164.68-38.11,187.1-110.03,19.84-87.43,3.46-172.4-73.16-238.63-56.06-49.99-141.36-75.43-217.58-65.19,0,0-45.83,6.16-45.83,6.16-5.73.77-16.63-8.45-18.28-13.36-3.48-16.96,21.69-24.23,33.93-30.59,79.06-100.49,46.65-25.27,93.14-155.68,6.62-26.9,6.39-70.86,11.23-98.92-4.68-116.9-142.05-223.62-249.69-124.38-45.03,49.61-82.68,98.87-100.01,162.9-17.41,43.34,8.55,9.44-15.23,45.51l6.84,7.2c1.45,1.53-16.82,7.52-14.82,10.31,20.85,29.13-9.19,71.75,8.62,87.13,25.75-4.8,59.68,1.32,73.22,24.09,17.7,28.27,15.15,22.85,13.49,54.91-.69,15.53-20.47,80.42-64.18,67.96-24.22-6.9-20.64-24.35-28.37-43.87l-25.61-64.67c5.58,14.08-9.31-62.61-8.34-69.7,3.51-19.93,9.71-76.46,13.49-95.32,8.16-52.99,6.01-17.43,29.67-72.88l19.77-46.34c4.29-10.06,16.78-25.26,25.72-33.53,20.02-18.51,32.73-42.12,54.2-57.31,69.74-61.42,172.52-65.14,234.16,6.86,11.96,14.11,36.9,37.87,42.93,55.23,0,0,23.46,77.89,23.46,77.89-9.05,24.93-4.1,71.87-11.52,96.11-8.13,20.01-19.24,76.3-33.2,93.37-9.63,15.82-45.91,62.76-56.9,78.76,53.63-1.63,117.81-2.07,161.02,30.38,5.67,5.06,25.89,5.92,30.16,12.54,16.54,25.61,32.48,10.12,62.85,50.03l33.99,44.66c23.69,27.26,36.99,98.02,32.58,124.4,0,0-11.35,6.74-11.35,6.74l15.94,5.31c-19.86,90.82-33.31,159.82-140.28,192.88-21.66,7.66-43.51,17.84-66.93,13-52.75-7.98-108.59-26.07-156.65-46.68-12.61-4.33-23.71-5.28-33.45-14.71-7.44-7.2-24.83-11.79-31.6-7.07-8.86,26.31-28.26,58.64-40.95,83.3-5.18,9.71-16.41,17.85-23.19,26.11-17.71,24.68-39.51,47.05-67.16,62.93-124.81,85.56-262.99,75.41-294.73-79.55-.25-1.63-7.95-4.94-8.03-6.66-.71-11.13-1.02-25.04,2.84-34.89,0,0-9.07-9.29-9.07-9.29,4.34-17.7,5.68-39.79-.19-58.01-5.27-16.34,8.75-32.95,8.82-44.83.39-66.48,14.51-30.42,24.17-112.22-120.12,10.21-354.79-47.54-341.29-184.92,0,0,9.18-18.97,9.18-18.97l8.21-7.95c2.45-2.37-6.28-10.7-7.88-14.07,17.11-23.72,39.1-51.46,65.08-68.42,22.74-17.12,52.03-24.9,50.83-31.52-2.58-14.18-6.52-2.11-33.54-36.32-39.97-50.61-12.65-48.08-39.08-104.16,23.01-29.26-1.76-22.57,17.39-44.92-.35-8.91,1.56-22.38,2.95-32.24.32-2.31,5.77-5.52,9.18-6.51,11.15-3.23,9.23-16.26,13.54-21.01,35.12-47.09,112.8-84.65,173.67-74.74,31.05,5.78,61.25,26.35,87.82,40.67,24.28,10.7,47.23,40.74,63.92,58.63,36.19,43.66.47,10.97,34.71,53.98,8,10.06,10.04,28.19,10.21,39.89-18.4,3.6-17.38-4.18-24.44-15.09-50.93-80.23-154.07-176.84-267.86-140.57-44.79,22.13-81.47,65.54-82.5,113.58-16.08,70.7-2.63,98.94,44.06,147.51,33.17,34.92,78.71-18.56,127.72,19.74ZM470.59,627.01c2.74-4.28,1.79-17.89-2.21-22.1-15.1-1.46-73.48,40-48.33,46.07,16.08,3.88,16.45-19.29,50.54-23.97Z"/>
@@ -35,107 +33,52 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="proyectos.html" class="p-regular">Proyectos</a></li>
-                    <li><a href="sobremi.html" class="p-regular-rosa">Sobre mí</a></li>
-                    <li><a href="contacto.html" class="p-regular">Contacto</a></li>
+                    <li><a href="../proyectos.html" class="p-regular-rosa">Proyectos</a></li>
+                    <li><a href="../sobremi.html" class="p-regular">Sobre mí</a></li>
+                    <li><a href="../contacto.html" class="p-regular">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
+        </header> 
 
-    <div data-barba="wrapper">  
+        <main data-barba="container" data-barba-namespace="detalle-proyecto" class="proyecto-container">
+            <section id="proyecto-imagenes" class="imagenes-col">
+            </section>
 
-        <main data-barba="container" data-barba-namespace="inicio"> 
-            <!-- transición rosa entre páginas -->
-        <div class="cortina-transicion"></div> 
-        
-<div class="sobre-mi">
-    <div class="miimagen-sobremi">
-             <img src="../assets/img/sobre mi/fotito de tia chulisima.png" alt="mi foto">
-     </div>
+            <aside class="info-col">
+                <a href="../proyectos.html" class="back-btn">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                
+                <nav id="proyecto-etiquetas" class="etiquetas">
+                </nav>
 
-    <div class="info-sobre-mi">
-        
-        <section class="informacion">
-            <article class="presentacion">
-                <p class="p-bold">HOLA! SOY</p>
-                <h2 class="h2">MARÍA<br>CHAMIZO<br>PRIETO</h2>
-            </article>
-            <article class="estudios">
-                <h4 class="h4-regular">
-                    ESTUDIANTE DE DISEÑO GRÁFICO
-                </h4>
-                <p class="p-regular-rosa">
-                    ESDM
-                </p>
-            </article>
-            <a href="../assets/CV.pdf" download="CV.pdf" class="btn-descarga">
-                <button>
-                    <span class="material-symbols-outlined">download</span>
-                    <p class="small">descarga mi CV</p>
-                </button>
-            </a>
-        </section>
-        <section class="manifiesto">
-            <p class="p-bold" id="element"></p>
-            <p class="p-regular">
-                Amapola nació casi como un juego de letras con mi nombre, pero se ha convertido en mi espacio personal para experimentar. Ahora mismo estoy en esa fase de absorberlo todo. Me encanta aprender a estructurar un buen grid, entender la tipografía y hacer que las cosas tengan sentido visual. Pero donde de verdad me lo paso bien es trasteando. No soy de seguir las reglas a rajatabla, tampoco una rebelde sin causa, simplemente me gusta probar, probar y probar (a veces puede que demasiado)
-                <br>
-                Me atrae mucho la mezcla entre lo material y lo que se ve en pantalla. Por eso en mis proyectos intento buscar siempre ese hueco para mancharme las manos, mezclar lo analógico con lo digital y ver qué pasa cuando, como una amapola en el campo, te sales un poco de los márgenes.
-            </p>
-        </section>
-        <section class="a-que-me-dedico">
-            <ul class="diseño">
-                <li class="h4-bold">BRANDING</li>
-                <li class="h4-bold">IU/UX</li>
-                <li class="h4-bold">MOTION GRAPHICS</li>
-                <li class="h4-bold">EDITORIAL</li>
-                <li class="h4-bold">PACKAGING</li>
-            </ul>
-            <ul class="programas">
-                <li class="small">ILLUSTRATION</li>
-                <li class="small">INDESIGN</li>
-                <li class="small">AFTER EFFECTS</li>
-                <li class="small">FIGMA</li>
-                <li class="small">PHOTOSHOP</li>
-                <li class="small">TOUCH DESIGNER</li>
-                <li class="small">RESOLUME</li>
-                <li class="small">CODE HTML/CSS/JS/JSON</li>
-                <li class="small">BLENDER</li>
-                <li class="small">RESOLUME</li>
-            </ul>
-        </section>
-        </div>
+                <div class="header-proyecto">
+                    <span id="proyecto-año" class="año"></span>
+                    <h1 id="proyecto-titulo" class="titulo"></h1>
+                </div>
 
-        <div class="cosas-que-me-gustan">
-           <p class="p-regular-titulo">
-                LISTA DE COSAS QUE NO ME PUEDEN FALTAR PARA 
-                <span class="texto-destacado">EMPEZAR A CREAR:</span>
-            </p>
-
-            <div id="ilustraciones"></div>
-        </div>
-    </div>
-        </main>         
+                <div id="proyecto-descripcion" class="descripcion">
+                </div>
+            </aside>
+        </main>        
 
         <footer class="footer">
             <div class="footer-marquee"> 
                 <div class="marquee-contenido">
-                     <a href="https://www.instagram.com/amapola.dgn/">
-                         <span class="h4-bold">@AMAPOLA.DGN</span>
-                        </a>
+                    <a href="https://www.instagram.com/amapola.dgn/">
+                        <span class="h4-bold">@AMAPOLA.DGN</span></a>
+                    
                     <span class="h4-bold">WELCOME TO MY WORLD</span>
-                            <span class="h4-bold">© 2026 MARÍA CHAMIZO — ALL RIGHTS RESERVED</span>
+                    <span class="h4-bold">© 2026 MARÍA CHAMIZO — ALL RIGHTS RESERVED</span>
                 </div>
-             </div>
+            </div>
         </footer>
 
     </div> 
 
-    <!-- JS y librerías -->
-    <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="../assets/app/main.js"></script>
+    <script src="../../assets/app/main.js"></script>
 
 </body>
 </html>

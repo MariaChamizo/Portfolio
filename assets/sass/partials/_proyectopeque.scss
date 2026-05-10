@@ -1,0 +1,151 @@
+//Para el responsive aquí he metido de -900 tmb porque quedaba raro el cambio
+.proyecto-container {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    gap: 50px;
+    align-items: start;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr; 
+        margin-top: 120px; 
+        padding: 0 5%;
+        gap: 30px;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 1rem;
+    }
+}
+
+#proyecto-imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+
+    @media (max-width: 900px) {
+        order: 2; 
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.info-col {
+    position: fixed; 
+    top: 120px;
+    margin-left: 60%;
+    
+    @media (max-width: 900px) {
+        position: relative; 
+        top: 0;
+        margin-left: 0;
+        order: 1; 
+    }
+
+    #proyecto-etiquetas {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 3rem;
+        margin-top: 0px;
+        font-weight: 500;
+        color: $negro;
+
+        @media (max-width: 480px) {
+            margin-bottom: 1.5rem;
+            flex-direction: row; 
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        span {
+            font-family: $body;
+            font-size: 1rem;
+            padding: 5px 12px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            color: $negro;
+
+            @media (max-width: 480px) {
+                font-size: 0.85rem;
+                padding: 0; 
+            }
+        }
+    }
+
+    .header-proyecto {
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 1rem;
+        }
+
+        #proyecto-año {
+            font-family: $body;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $acento;
+            margin-bottom: 2rem;
+
+            @media (max-width: 480px) {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        #proyecto-titulo {
+            font-family:$tittle;
+            font-size: 5rem;
+            line-height: 100%;
+            margin-top: 1rem;
+            color: $negro;
+            width: 70%;
+
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    #proyecto-descripcion {
+        font-family: $body;
+        line-height: 140%;
+        font-size: 1rem;
+        max-width: 450px; 
+        color: $negro;
+
+        @media (max-width: 900px) {
+            max-width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $negro;
+    transition: transform 0.3s ease;
+
+    @media (max-width: 480px) {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    &:hover {
+        transform: translateX(-10px);
+        color: $acento;
+    }
+}

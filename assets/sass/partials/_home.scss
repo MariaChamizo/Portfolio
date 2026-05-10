@@ -1,9 +1,8 @@
-
 //he tenido que retocar alguna cosilla con ia xq me daba problemas
 .home {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 85vh;
     overflow: hidden;
 
     .capa2-letrasgigantes {
@@ -14,7 +13,7 @@
         pointer-events: none;
 
         .h1 {
-            font-size: clamp(140px, 28vw, 600px);
+            font-size: clamp(140px, 28vw, 580px);
             line-height: 0.85;
             width: 100%;
             display: flex;
@@ -25,9 +24,19 @@
             white-space: nowrap;
             pointer-events: auto;     
             letter-spacing: 1rem;
+            
+
+            @media (max-width: 480px) {
+                font-size: clamp(60px, 30vw, 300px); 
+                letter-spacing: 0.1rem; 
+                margin-bottom: 0rem;
+                margin-left: 0;
+                margin-right: 0;
+            }   
+
             &:hover {
-                    color: $acento;
-                }
+                color: $acento;
+            }
 
             .silaba {
                 display: inline-block;
@@ -37,6 +46,7 @@
             }
         }
     }
+    
     .info-block {
         position: absolute;
         opacity: 0;
@@ -50,6 +60,15 @@
         width: 28vw;
         padding-bottom: 2rem;
 
+
+        @media (max-width: 480px) {
+            top: 5%;
+            left:0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 1rem;
+        }
+
         a {
             display: flex;
             flex-direction: row;
@@ -58,21 +77,44 @@
             margin-left: 25%;
             text-decoration: none;
             color: $negro;
+
+            @media (max-width: 480px) {
+                margin-left: 0;
+                gap: 1rem;
+                align-items: center;
+                flex-direction: column; 
+                gap: 1.5rem;
+                top:5%;
+                right: 20%;
+            }
+
             .h3-regular{
                 font-size: 32px;
                 line-height: 32px;
                 font-weight: 400;
                 text-transform: uppercase;
+
+                @media (max-width: 480px) {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    margin-top: -1rem;
+                }
             }
         }
 
         .foto-maria {
-            width: 25rem;
-            height: 25rem;      
+            width: 22rem;
+            height: 22rem;      
             object-fit: cover; 
             object-position: center center; 
             flex-shrink: 0;
             margin-bottom: 2.3rem;
+
+            @media (max-width: 480px) {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 0%;
+            }
         }
         h3 { margin: 0; }
     }
@@ -81,8 +123,14 @@
         left: 53%;
         width: 33%;
         transform: translateX(-50%);
-        top: 0rem;
+        top: 4rem;
         text-align: left;
+
+        @media (max-width: 480px) {
+            width: 80%;
+            top: 57%; 
+            left: 80%;
+        }
 
         .roles-lista {
             list-style: none;
@@ -91,13 +139,29 @@
             display: flex;
             flex-direction: column;
             gap: 2.5rem;
-            .h4-bold{
+
+            @media (max-width: 480px) {
+                margin-left: 5%;
+                gap: 0.5rem;
+            }
+
+            .h4-bold {
                 text-transform: uppercase;
                 font-weight: 650;
+                
+                @media (max-width: 480px) {
+                    font-size: 12px;
+                }
             }
-            .h4-regular{
+            .h4-regular {
                 text-transform: uppercase;
                 font-weight: 400;
+                @media (max-width: 480px) {
+                    font-size: 12px;
+                    line-height: 1;
+                    }
+
+                
             }
         }
 
@@ -108,10 +172,16 @@
     .info-lugar-LA {
         bottom: 0;
         display: flex;
-        margin-bottom: 15% ;
+        margin-bottom: 15%;
         right: 10vw;
         padding-bottom: 2rem;
         text-align: right;
+
+        @media (max-width: 480px) {
+            margin-bottom: 85%;
+            left: 80%;
+            padding-bottom: 0;
+        }
 
         .lugar-lista {
             list-style: none;
@@ -122,7 +192,11 @@
             gap: 2rem;
             text-transform: uppercase;
 
-
+            @media (max-width: 768px) {
+                margin-right: 1rem;
+                gap: 0.5rem;
+                justify-content: flex-end;
+            }
         }
 
         li { margin: 0; }

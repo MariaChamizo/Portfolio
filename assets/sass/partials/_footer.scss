@@ -14,9 +14,18 @@ footer {
         width: max-content; 
         padding: 1rem 0;
 
+        @media (max-width: 768px) {
+            padding: 0.75rem 0;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0.5rem 0;
+        }
+
         &:hover .marquee-contenido {
             animation-play-state: paused;
         }
+        
         .marquee-contenido {
             display: flex;
             align-items: center;
@@ -24,17 +33,34 @@ footer {
             gap: 3rem; 
             padding-right: 3rem; 
             animation: moverMarquee 15s linear infinite;
-            a{
+
+            @media (max-width: 768px) {
+                gap: 2rem;
+                padding-right: 2rem;
+            }
+
+            @media (max-width: 480px) {
+                gap: 1.25rem;
+                padding-right: 1.25rem;
+                animation: moverMarquee 20s linear infinite; // Un poco más lento para que sea legible en pantallas estrechas
+            }
+
+            a {
                 text-decoration: none;
-                color: $negro;
-                &:hover{
+                color: black;
+                
+                &:hover {
                     color: $fondo;
                 }
             }
+
+            span, a {
+                @media (max-width: 480px) {
+                    font-size: 0.85rem;
+                }
+            }
         }
-    
     }
-    
 }
 
 @keyframes moverMarquee {

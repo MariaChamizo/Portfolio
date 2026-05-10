@@ -4,9 +4,16 @@
 @import 'partials/cargaheader';
 @import 'partials/home';
 @import 'partials/footer';
-@import 'partials/pantalladecarga';
 @import 'partials/proyectos';
 @import 'partials/sobremi';
+@import 'partials/contacto';
+@import 'partials/proyectopeque';
 
-
-
+//ns si esto es ilegal ponerlo aquí pero es que me hacía estilos raros en el sobremi 
+a {
+    text-decoration: none !important;
+}
+body.con-scroll {
+    overflow-y: auto;
+    overflow-x: hidden; 
+}

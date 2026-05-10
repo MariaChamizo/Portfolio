@@ -1,19 +1,17 @@
-html, body {
+//Esto lo metí en uno de mis intentos de q barba daba problemas
+// hice caso a la ia xq no podía más y me solucionó cosas
+//me pongo a mi misma lo que es cada cosa x si me sirve a futuro jeje
+*, *::before, *::after { //resetea márgenes y paddings de todos los elementos, y hace que el tamaño de los elementos incluya el borde. Sin esto cada navegador pone sus propios espacios por defecto y todo se descoloca.
+    box-sizing: border-box;
     margin: 0;
-    padding-right: 2.25rem;
-    overflow: hidden;
+    padding: 0;
+}
+
+input, button, textarea, select { //hace que estos elementos hereden la fuente del body. Sin esto el navegador les pone su propia fuente fea por defecto, que era tu problema al principio de la conversación.
+    font-family: inherit;
+}
+
+//esto nada q ver con lo anterior
+body{
     background-color: $fondo;
-}
-
-[data-barba="wrapper"] {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-main[data-barba="container"] {
-    flex: 1;
-    min-height: 0;   
 }

@@ -1,0 +1,248 @@
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5rem;
+  padding: 36px;
+  margin-bottom: 9rem;
+
+  @media (max-width: 480px) {
+      flex-direction: column;
+      gap: 1rem; 
+      padding: 20px;
+      margin-bottom: 5rem;
+      margin-top: 40px; 
+  }
+
+  .textos-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+
+    @media (max-width: 480px) {
+        display: contents; 
+    }
+
+    h2 {
+        margin: 0px;
+        line-height: 100%;
+        letter-spacing: 0.15rem;
+        margin-bottom: 28px;
+
+        @media (max-width: 480px) {
+            order: 1; 
+            font-size: 4.5rem; 
+            margin-bottom: 0; 
+            padding-bottom: 0; 
+        }
+    }
+
+    h3 {
+      margin: 0px;
+      margin-top: 1rem;
+      color: $acento;
+      text-transform: uppercase;
+      width: 50%;
+
+      @media (max-width: 480px) {
+          order: 2; 
+          width: 100%;
+          margin-top: 0; 
+          padding-top: 0; 
+          line-height: 1; 
+          top: -1rem;
+      }
+    }
+    
+    .redes-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        margin-top: 14rem;
+        gap: 1rem;
+
+        @media (max-width: 480px) {
+            order: 4; 
+            margin-top: 2rem; 
+            width: 100%;
+        }
+
+        a {
+            margin: 0px;
+        }
+    }
+  }
+
+  .partederecha {
+    margin-left: 5rem;
+    width: 60%; 
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem; 
+
+    @media (max-width: 480px) {
+        order: 3; 
+        margin-left: 0;
+        width: 100%;
+        margin-top: 1.5rem;
+        gap: 3rem; 
+    }
+
+    h5 {
+        margin: 0px;
+    }
+
+    p {
+        margin: 0px;
+        width: 30%; 
+        font-size: 1.2rem;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+    .formulariochuli {
+        width: 100%; 
+        margin-top: 5rem;
+
+        @media (max-width: 480px) {
+            margin-top: 0; 
+        }
+
+        .footerRight {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            width: 100%;
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                width: 100%;
+
+                .formContent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+                    width: 100%;
+
+                    &:first-child {
+                        width: 50%;
+
+                        @media (max-width: 480px) {
+                            width: 100%;
+                        }
+                    }
+
+                    label {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        letter-spacing: 0.08em;
+                        color: $negro;
+                        text-transform: uppercase;
+                        font-family: $body;
+
+                        @media (max-width: 480px) {
+                            font-size: 1rem; 
+                        }
+                    }
+
+                    input, textarea {
+                        border: none;
+                        outline: none;
+                        padding: 6px 0;
+                        font-size: 1rem;
+                        background: transparent;
+                        width: 100%; 
+                        font-family: $body;
+                    }
+
+                    input {
+                        border-bottom: 1.5px solid $negro;
+
+                        &:focus {
+                            border-bottom-color: $acento;
+                        }
+                    }
+
+                    textarea {
+                        resize: none;
+                        line-height: 2rem; 
+                        
+                        background-image: repeating-linear-gradient(
+                            transparent, 
+                            transparent calc(2rem - 1.5px), 
+                            $negro calc(2rem - 1.5px), 
+                            $negro 2rem 
+                        );
+
+                        &:focus {
+                            background-image: repeating-linear-gradient(
+                                transparent, 
+                                transparent calc(2rem - 1.5px), 
+                                $acento calc(2rem - 1.5px), 
+                                $acento 2rem 
+                            );
+                        }
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                width: fit-content;
+                padding: 0.4rem 1.2rem;
+                background: none;
+                cursor: pointer;
+                text-decoration: none !important;
+                border: 1px solid $acento;
+                margin-top: 1rem;
+                border-radius: 4px;
+                align-self: flex-end; 
+
+                @media (max-width: 480px) {
+                    align-self: flex-start;
+                    padding: 0.3rem 0.8rem;
+                }
+
+                .small {
+                    margin: 0; 
+                    text-decoration: none !important;
+                    color: $acento;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1rem;
+
+                    @media (max-width: 480px) {
+                        font-size: 0.8rem;
+                    }
+                }
+                
+                span {
+                    @media (max-width: 480px) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                &:hover {
+                    background-color: $acento;
+                    .small, span {
+                        color: $fondo; 
+                    }
+                }
+            }
+        }
+    }
+  }
+}

@@ -1,8 +1,8 @@
-
-.pantalla-carga-inicio{
+.pantalla-carga-inicio {
     background-color: $fondo;
 }
-header{
+
+header {
     display: flex;
     position: fixed;
     justify-content: left;
@@ -11,55 +11,89 @@ header{
     align-items: center;
     margin-top: 2.25rem;
     background-color: transparent;
+    width: 100%;
+    z-index: 9999; 
+
+    @media (max-width: 768px) {
+        margin-left: 5%;
+        margin-top: 1.5rem;
+        justify-content: space-between;
+        padding-right: 10%;
+    }
 
     .logo {
         position: relative;
         z-index: 9999;
         width: 5%;
         background-color: transparent;
+
+        @media (max-width: 768px) {
+            width: 60px;
+        }
+
+        @media (max-width: 480px) {
+            margin-top: 0;
+            width: 60px;
+        }
     }
     
     #logo-animado path {
         fill: $acento; 
 
-        &:hover{
+        &:hover {
             fill: $negro;
         }
-        
     }
 
-    ul{
+    ul {
         display: flex;
         justify-content: space-between;
         gap: 4.5rem;
+        margin-left: 3rem;
 
-               li {
-    text-transform: uppercase; 
-    list-style: none;
-    .p-regular-rosa {
-        text-decoration: none;
-        color: $acento;
-        font-weight: 600;
-        display: inline-block; 
-        transition: color 0.3s ease, transform 0.3s ease; 
+        @media (max-width: 768px) {
+            gap: 2rem;
+        }
 
-        &:hover {
-            color: $negro;
-            transform: scale(1.2);
+        @media (max-width: 480px) {
+            gap: 1rem;
         }
-        }
-    .p-regular {
-        text-decoration: none;
-        color: $negro;
-        font-weight: 600;
-        display: inline-block; 
-        transition: color 0.3s ease, transform 0.3s ease; 
 
-        &:hover {
-            color: $acento;
-            transform: scale(1.2);
+        li {
+            text-transform: uppercase; 
+            list-style: none;
+
+           
+
+            .p-regular-rosa {
+                text-decoration: none;
+                color: $acento;
+                font-weight: 600;
+                display: inline-block; 
+                transition: color 0.3s ease, transform 0.3s ease; 
+               
+                @media (max-width: 480px) {
+                font-size: 0.75rem;
+            }
+
+                &:hover {
+                    color: $negro;
+                    transform: scale(1.2);
+                }
+            }
+
+            .p-regular {
+                text-decoration: none;
+                color: $negro;
+                font-weight: 600;
+                display: inline-block; 
+                transition: color 0.3s ease, transform 0.3s ease; 
+
+                &:hover {
+                    color: $acento;
+                    transform: scale(1.2);
+                }
+            }
         }
-    }
-}
     }
 }

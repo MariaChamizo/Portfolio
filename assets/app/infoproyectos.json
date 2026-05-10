@@ -1,0 +1,133 @@
+{
+    "infoproyectos": [
+        {
+            "id": "manifiesto",
+            "etiquetas": ["diseño editorial", "tipografía","fanzine", "experimental"],
+            "año": "2024",
+            "titulo": "Manifiesto de Diseño",
+            "url": "proyectobase.html?id=manifiesto",
+            "descripcion": "Este proyecto reúne las palabras clave que definen mi visión del buen diseño, basándose en la idea: “Piensa antes de hablar”. Esta frase representa las etapas del proceso: pensar (análisis, ideación, bocetos y prototipado) y hablar (resultado e interacción con el usuario).El manifiesto se presenta en un vinilo, invitando al usuario a la escucha. Está alojado en una funda tipo díptico con un texto que resulta ilegible a primera vista; aquí, las letras se deslizan en lugar de pasar las páginas. Para revelar el mensaje, el usuario debe extraer las láminas de poliéster e interactuar con el entorno. Al hacerlo, las letras se ordenan y el mensaje se vuelve legible, creando una experiencia de descubrimiento y participación activa en la revelación del manifiesto.",
+            "imagenes": [
+                "/assets/img/proyectos/manifiesto diseño/general.jpg",
+                 "/assets/img/proyectos/manifiesto diseño/todo.jpg",
+                "/assets/img/proyectos/manifiesto diseño/letras.jpg"
+            ]
+        },
+        {
+            "id": "fotocopyarte",
+            "etiquetas": ["branding"],
+            "año": "2025",
+            "titulo": "Identidad Visual Fotocopyarte",
+            "url": "proyectobase.html?id=fotocopyarte",
+            "descripcion": "descripción",
+            "imagenes": [
+                "/assets/img/proyectos/sin foto.png",
+                 "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png"
+            ]
+        },
+        {
+            "id": "biennale",
+            "etiquetas": ["cartel", "serie", "experimental"],
+            "año": "2025",
+            "titulo": "Pósters Biennale de la Danse de Lyon",
+            "url": "proyectobase.html?id=biennale",
+            "descripcion": "Esta serie de carteles experimentales para la Biennale de la Danse explora la premisa del baile como destructor de barreras. Para capturar la energía del movimiento, desarrollé una tipografía expresiva creada a partir de trazos manuales con tinta china, posteriormente procesados y vectorizados en Illustrator. Esta manipulación gráfica transforma las letras en una metáfora visual de la música, donde el grosor variable representa el volumen, las curvas fluidas simbolizan la melodía y la disposición fragmentada evoca el ritmo. La combinación de esta tipografía gestual con siluetas humanas en acción y una paleta de colores vibrantes da como resultado una composición donde texto y cuerpo bailan juntos, rompiendo los límites del cartel tradicional.",
+            "imagenes": [
+                "/assets/img/proyectos/biennale/los3.png",
+                 "/assets/img/proyectos/biennale/verde.png",
+                 "/assets/img/proyectos/biennale/verde.png",
+                 "/assets/img/proyectos/biennale/verde.png"
+                
+            ]
+        },
+        {
+            "id": "mundo",
+            "etiquetas": ["editorial","fanzine","tipografía","Julio Verne"],
+            "año": "2024",
+            "titulo": "Vuelta al Mundo en 8 Pliegos",
+            "url": "proyectobase.html?id=mundo",
+            "descripcion": "descripción",
+            "imagenes": [
+                "/assets/img/proyectos/vuelta al mundo/1.jpg",
+                 "/assets/img/proyectos/vuelta al mundo/2.jpg",
+                 "/assets/img/proyectos/vuelta al mundo/3.jpg",
+                 "/assets/img/proyectos/vuelta al mundo/4.jpg",
+                 "/assets/img/proyectos/vuelta al mundo/5.jpg",
+                 "/assets/img/proyectos/vuelta al mundo/6.jpg"
+                
+            ]
+        },
+        {
+            "id": "dtnt",
+            "etiquetas": ["diseño editorial","investigación","tipografía","Museo Nacional de Artes Decorativas"],
+            "año": "2025",
+            "titulo": "DTNT (MNAD)",
+            "url": "proyectobase.html?id=dtnt",
+            "descripcion": "Este proyecto de diseño editorial explora la paradoja de la temporalidad vinculando la mecánica de un reloj de Joseph Anton Kosler del siglo XIX con la profundidad filosófica de San Agustín. A través de una narrativa visual experimental que emplea transparencias, troqueles y una tipografía fragmentada, el fanzine materializa la distentio animi agustiniana, contrastando la precisión de la relojería clásica con el caos de impulsos y la inmediatez que define nuestra atención en la era digital. El recorrido táctil de la pieza culmina en un espejo que atrapa el reflejo del lector, deteniendo la carrera infinita hacia el futuro para convertir el objeto en un dispositivo de resistencia que nos obliga, por fin, a habitar y confrontar el presente.",
+            "imagenes": [
+               "/assets/img/proyectos/fanzine/5.png",
+                 "/assets/img/proyectos/fanzine/2.png",
+                "/assets/img/proyectos/fanzine/3.png",
+                "/assets/img/proyectos/fanzine/4.png",
+                "/assets/img/proyectos/fanzine/1.png"
+            ]
+        },
+        {
+            "id": "fw",
+            "etiquetas": ["audiovisual","reactivo","touch designer","Fashion Week Madrid 2026"],
+            "año": "2025",
+            "titulo": "Visuales FW M26",
+            "url": "proyectobase.html?id=fw",
+            "descripcion": "descripción",
+            "imagenes": [
+                "/assets/img/proyectos/sin foto.png",
+                 "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png",
+                "/assets/img/proyectos/sin foto.png"
+            ]
+        },
+        {
+            "id": "pasaporte",
+            "etiquetas": ["diseño de servicios","publicidad","identidad visual"],
+            "año": "2025",
+            "titulo": "Pasaporte de Barrio",
+            "url": "proyectobase.html?id=pasaporte",
+            "descripcion": "descripción",
+            "imagenes": [
+                "/assets/img/proyectos/pasaporte de barrio/pasaporte.png",
+                 "/assets/img/proyectos/pasaporte de barrio/panaderia.png",
+                "/assets/img/proyectos/pasaporte de barrio/bar.png"
+            ]
+        },
+         {
+            "id": "infografia",
+            "etiquetas": ["infografía","ilustración de prensa"],
+            "año": "2025",
+            "titulo": "Fabrica de la Desinformación",
+            "url": "proyectobase.html?id=infografia",
+            "descripcion": "Esta infografía de prensa ilustra el impacto de la inteligencia artificial en la creación masiva de contenido fraudulento a través de la metáfora visual de una fábrica automatizada. El proyecto transforma datos estadísticos complejos sobre ética digital en una narrativa gráfica accesible, articulando tres ejes críticos: la discriminación algorítmica, las estafas con deepfakes y la proliferación de noticias falsas. Mediante una paleta cromática de alto contraste y la integración orgánica de gráficos de datos en la propia ilustración, la composición guía al espectador desde la materia prima de los sesgos hasta la mentira empaquetada, demostrando una sólida capacidad de síntesis conceptual y jerarquización visual para el entorno editorial.",
+            "imagenes": [
+                "/assets/img/proyectos/desinformación/infografia.png",
+                 "/assets/img/proyectos/desinformación/sinmockup.png"
+            ]
+        },
+         {
+            "id": "catalalata",
+            "etiquetas": ["packaging","ilustración","catalalata"],
+            "año": "2025",
+            "titulo": "Catalalata 2024",
+            "url": "proyectobase.html?id=catalalata",
+            "descripcion": "descripción",
+            "imagenes": [
+                "/assets/img/proyectos/catalalata/catalalata 1.png",
+                 "/assets/img/proyectos/catalalata/catalalata 2.png",
+                "/assets/img/proyectos/catalalata/catalalata 3.png",
+                "/assets/img/proyectos/catalalata/catalalata 4.png"
+            ]
+        }  
+    ]
+}
