@@ -24,7 +24,7 @@ header {
     .logo {
         position: relative;
         z-index: 9999;
-        width: 5%;
+        width: 4%;
         background-color: transparent;
 
         @media (max-width: 768px) {
@@ -55,8 +55,8 @@ header {
             gap: 2rem;
         }
 
-        @media (max-width: 480px) {
-            gap: 1rem;
+        @media (max-width: 390px) {
+            gap: 0.8rem;
         }
 
         li {
@@ -69,11 +69,12 @@ header {
                 text-decoration: none;
                 color: $acento;
                 font-weight: 600;
+                font-size: 0.8rem;
                 display: inline-block; 
                 transition: color 0.3s ease, transform 0.3s ease; 
                
-                @media (max-width: 480px) {
-                font-size: 0.75rem;
+                @media (max-width: 390px) {
+                font-size: 0.7rem;
             }
 
                 &:hover {
@@ -85,10 +86,14 @@ header {
             .p-regular {
                 text-decoration: none;
                 color: $negro;
+                font-size: 0.8rem;
                 font-weight: 600;
                 display: inline-block; 
                 transition: color 0.3s ease, transform 0.3s ease; 
 
+                @media (max-width: 390px) {
+                font-size: 0.7rem;
+            }
                 &:hover {
                     color: $acento;
                     transform: scale(1.2);

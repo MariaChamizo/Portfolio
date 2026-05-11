@@ -12,13 +12,9 @@ footer {
     .footer-marquee {
         display: flex; 
         width: max-content; 
-        padding: 1rem 0;
+        padding: 0.5rem 0;
 
-        @media (max-width: 768px) {
-            padding: 0.75rem 0;
-        }
-
-        @media (max-width: 480px) {
+        @media (max-width: 390px) {
             padding: 0.5rem 0;
         }
 
@@ -30,19 +26,14 @@ footer {
             display: flex;
             align-items: center;
             flex-shrink: 0; 
-            gap: 3rem; 
-            padding-right: 3rem; 
+            gap: 2rem; 
+            padding-right: 2rem; 
             animation: moverMarquee 15s linear infinite;
 
-            @media (max-width: 768px) {
-                gap: 2rem;
-                padding-right: 2rem;
-            }
-
-            @media (max-width: 480px) {
+            @media (max-width: 390px) {
                 gap: 1.25rem;
                 padding-right: 1.25rem;
-                animation: moverMarquee 20s linear infinite; // Un poco más lento para que sea legible en pantallas estrechas
+                animation: moverMarquee 20s linear infinite;
             }
 
             a {
@@ -55,7 +46,7 @@ footer {
             }
 
             span, a {
-                @media (max-width: 480px) {
+                @media (max-width: 390px) {
                     font-size: 0.85rem;
                 }
             }

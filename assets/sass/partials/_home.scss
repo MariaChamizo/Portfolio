@@ -1,4 +1,3 @@
-//he tenido que retocar alguna cosilla con ia xq me daba problemas
 .home {
     position: relative;
     width: 100%;
@@ -13,7 +12,7 @@
         pointer-events: none;
 
         .h1 {
-            font-size: clamp(140px, 28vw, 580px);
+            font-size: clamp(120px, 25vw, 500px);
             line-height: 0.85;
             width: 100%;
             display: flex;
@@ -23,15 +22,12 @@
             padding: 0;
             white-space: nowrap;
             pointer-events: auto;     
-            letter-spacing: 1rem;
+            letter-spacing: 0.67rem;
             
-
-            @media (max-width: 480px) {
+            @media (max-width: 390px) {
                 font-size: clamp(60px, 30vw, 300px); 
-                letter-spacing: 0.1rem; 
-                margin-bottom: 0rem;
-                margin-left: 0;
-                margin-right: 0;
+                letter-spacing: 0.067rem; 
+                margin-bottom: 0;
             }   
 
             &:hover {
@@ -58,77 +54,69 @@
         bottom: 0;
         left: 2vw;
         width: 28vw;
-        padding-bottom: 2rem;
-
+        padding-bottom: 1.34rem;
 
         @media (max-width: 480px) {
             top: 5%;
             left:0;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-left: 1rem;
+            margin-left: 0.67rem;
         }
 
         a {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-            gap: 1.5rem;
+            gap: 1rem;
             margin-left: 25%;
-            text-decoration: none;
             color: $negro;
 
-            @media (max-width: 480px) {
+            @media (max-width: 390px) {
                 margin-left: 0;
-                gap: 1rem;
-                align-items: center;
+                gap: 0.67rem;
                 flex-direction: column; 
-                gap: 1.5rem;
-                top:5%;
-                right: 20%;
             }
 
             .h3-regular{
-                font-size: 32px;
-                line-height: 32px;
+                font-size: 21.4px;
+                line-height: 21.4px;
                 font-weight: 400;
                 text-transform: uppercase;
 
-                @media (max-width: 480px) {
-                    font-size: 16px;
-                    line-height: 1.2;
-                    margin-top: -1rem;
+                @media (max-width: 390px) {
+                    font-size: 1rem;
+                    margin-top: -0.67rem;
+                    margin-left: 1rem;
                 }
             }
         }
 
         .foto-maria {
-            width: 22rem;
-            height: 22rem;      
+            width: 14.74rem;
+            margin-left: 1.8rem;
+            height: 14.74rem;      
             object-fit: cover; 
             object-position: center center; 
             flex-shrink: 0;
-            margin-bottom: 2.3rem;
+            margin-bottom: 1.54rem;
 
-            @media (max-width: 480px) {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 0%;
+            @media (max-width: 390px) {
+                width: 9rem;
+                height: 9rem;
+                margin-left: 1rem;
             }
         }
-        h3 { margin: 0; }
     }
 
     .info-roles-PO {
         left: 53%;
         width: 33%;
         transform: translateX(-50%);
-        top: 4rem;
+        top: 2.68rem;
         text-align: left;
 
-        @media (max-width: 480px) {
+        @media (max-width: 390px) {
             width: 80%;
-            top: 57%; 
+            top: 60%; 
             left: 80%;
         }
 
@@ -138,35 +126,29 @@
             margin-left: 35%;
             display: flex;
             flex-direction: column;
-            gap: 2.5rem;
+            gap: 1.67rem;
 
-            @media (max-width: 480px) {
+            @media (max-width: 390px) {
                 margin-left: 5%;
-                gap: 0.5rem;
+                gap: 0.33rem;
             }
 
-            .h4-bold {
+            .p-bold {
                 text-transform: uppercase;
                 font-weight: 650;
                 
-                @media (max-width: 480px) {
-                    font-size: 12px;
+                @media (max-width: 390px) {
+                    font-size: 0.8rem;
                 }
             }
-            .h4-regular {
+            .p-regular {
                 text-transform: uppercase;
                 font-weight: 400;
-                @media (max-width: 480px) {
-                    font-size: 12px;
-                    line-height: 1;
-                    }
-
-                
+                @media (max-width: 390px) {
+                    font-size: 0.8rem;
+                }
             }
         }
-
-        li { margin: 0; }
-        h4 { margin: 0; }
     }
 
     .info-lugar-LA {
@@ -174,32 +156,37 @@
         display: flex;
         margin-bottom: 15%;
         right: 10vw;
-        padding-bottom: 2rem;
+        padding-bottom: 1.34rem;
         text-align: right;
 
-        @media (max-width: 480px) {
-            margin-bottom: 85%;
+        @media (max-width: 390px) {
+            margin-bottom: 120%;
             left: 80%;
-            padding-bottom: 0;
         }
 
         .lugar-lista {
             list-style: none;
             padding: 0;
-            margin-right: 45%;
+            margin-right: 1.8rem;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.34rem;
             text-transform: uppercase;
 
             @media (max-width: 768px) {
-                margin-right: 1rem;
-                gap: 0.5rem;
-                justify-content: flex-end;
+                margin-right: 0.67rem;
+                gap: 0.33rem;
             }
         }
-
-        li { margin: 0; }
-        h4 { margin: 0; }
     }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }

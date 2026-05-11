@@ -56,6 +56,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.set("header", { position: "relative", zIndex: 9999 });
 
+    // Menú mobile
+    const logoBtn = document.querySelector('.logo');
+    const menuOverlay = document.getElementById('menuMobile');
+    const headerEl = document.querySelector('header');
+
+    if (logoBtn && menuOverlay) {
+        logoBtn.addEventListener('click', () => {
+            const isOpen = menuOverlay.classList.toggle('is-open');
+            headerEl.classList.toggle('menu-abierto', isOpen);
+        });
+
+        menuOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOverlay.classList.remove('is-open');
+                headerEl.classList.remove('menu-abierto');
+            });
+        });
+    }
+
     // SÍLABAS INTERACTIVAS (inicio)
     function activarClicsSilabas() {
         const home      = document.querySelector(".home");
@@ -329,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const centerX = (window.innerWidth / 2) - (rect.left + (rect.width || 50) / 2);
                     const centerY = (window.innerHeight / 2) - (rect.top + (rect.height || 50) / 2);
 
-                    const esMovil = window.innerWidth <= 480;
+                    const esMovil = window.innerWidth <= 390;
                     const escalaMaxima = esMovil ? 2.5 : 4;
 
                     gsap.set(logoSVG, { x: centerX, y: centerY, scale: 0, transformOrigin: "center center" });

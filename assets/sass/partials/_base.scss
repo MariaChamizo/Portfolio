@@ -7,6 +7,7 @@
     padding: 0;
 }
 
+
 input, button, textarea, select { //hace que estos elementos hereden la fuente del body. Sin esto el navegador les pone su propia fuente fea por defecto, que era tu problema al principio de la conversación.
     font-family: inherit;
 }
