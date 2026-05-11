@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const footerMarquee = document.querySelector('.footer-marquee');
     const marqueeContenido = document.querySelector('.marquee-contenido');
 
-    const enSubcarpeta = window.location.pathname.includes('/proyectos/');
-    const rutaBase = enSubcarpeta ? '../../' : '../';
+    const rutaBase = 'assets/'; 
     
 
     // Animación Footer
@@ -30,12 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (cursor) {
         const florFrames = [
-            `${rutaBase}assets/img/mouse/FLOR1.svg`,
-            `${rutaBase}assets/img/mouse/FLOR2.svg`,
-            `${rutaBase}assets/img/mouse/FLOR3.svg`,
-            `${rutaBase}assets/img/mouse/FLOR4.svg`,
-            `${rutaBase}assets/img/mouse/FLOR5.svg`,
-            `${rutaBase}assets/img/mouse/FLOR6.svg`,
+            `${rutaBase}img/mouse/FLOR1.svg`,
+            `${rutaBase}img/mouse/FLOR2.svg`,
+            `${rutaBase}img/mouse/FLOR3.svg`,
+            `${rutaBase}img/mouse/FLOR4.svg`,
+            `${rutaBase}img/mouse/FLOR5.svg`,
+            `${rutaBase}img/mouse/FLOR6.svg`,
         ];
         let fotogramaActual = 0;
 
@@ -259,10 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!proyectoId) return;
 
-        const ahoraEnSubcarpeta = window.location.pathname.includes('/proyectos/');
-        const rutaActual = ahoraEnSubcarpeta ? '../../' : '../';
-
-        fetch(`${rutaActual}assets/app/infoproyectos.json`)
+        fetch(`assets/app/infoproyectos.json`)
             .then(res => res.json())
             .then(data => {
                 const p = data.infoproyectos.find(item => item.id === proyectoId);
@@ -318,7 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     if (!logoSVG) return;
 
-                    // Usamos window.innerHeight porque 100vh en móvil da problemas con la barra de direcciones
                     gsap.set("#pantalla-carga-inicio", {
                         position: "fixed", top: 0, left: 0,
                         width: "100vw", height: window.innerHeight + "px",
@@ -328,14 +323,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     gsap.set(logoSVG, { clearProps: "all" });
                     
-                    // TRUCO: Medimos el contenedor padre (.logo) en vez del SVG para no dar fallo en móvil
                     const contenedorLogo = document.querySelector('.logo') || logoSVG;
                     const rect = contenedorLogo.getBoundingClientRect();
                     
                     const centerX = (window.innerWidth / 2) - (rect.left + (rect.width || 50) / 2);
                     const centerY = (window.innerHeight / 2) - (rect.top + (rect.height || 50) / 2);
 
-                    // Si estamos en móvil, escalamos un poco menos para que no rompa la pantalla
                     const esMovil = window.innerWidth <= 480;
                     const escalaMaxima = esMovil ? 2.5 : 4;
 
@@ -391,7 +384,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 afterEnter() {
                     document.body.classList.add('con-scroll');
                     document.documentElement.classList.add('con-scroll');
-                    fetch(`${rutaBase}assets/app/ilustraciones.json`)
+                    fetch(`assets/app/ilustraciones.json`)
                         .then(res => res.json())
                         .then(datos => {
                             const galeria = document.querySelector('#ilustraciones');
@@ -426,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // PROYECTOS (JSON)
-    fetch(`${rutaBase}assets/app/proyectos.json`)
+    fetch(`assets/app/proyectos.json`)
         .then(res => res.json())
         .then(datos => {
             const galeria = document.querySelector('#galeria-proyectos');
@@ -450,7 +443,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //ILUSTRACIONES SOBRE MI (JSON)
     if (document.querySelector('.sobre-mi')) { //aqui me ha tenido que ayudar la ia xq no le apetecía hacerme la animación
-        fetch(`${rutaBase}assets/app/ilustraciones.json`)
+        fetch(`assets/app/ilustraciones.json`)
             .then(res => res.json())
             .then(datos => {
                 const galeria = document.querySelector('#ilustraciones');

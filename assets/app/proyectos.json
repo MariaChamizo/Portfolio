@@ -3,56 +3,56 @@
     {
       "titulo": "Manifiesto de Diseño",
       "año": "2024",
-      "imagen": "../assets/img/proyectos/manifiesto diseño/letras.jpg",
-      "url": "proyectos/proyectobase.html?id=manifiesto"
+      "imagen": "assets/img/proyectos/manifiesto diseño/letras.jpg",
+      "url": "proyectobase.html?id=manifiesto"
     },
     {
       "titulo": "Identidad Visual Fotocopyarte",
       "año": "2025",
-      "imagen": "../assets/img/proyectos/fotocopyarte/fotocopyportfolio.png",
-      "url": "proyectos/proyectobase.html?id=fotocopyarte"
+      "imagen": "assets/img/proyectos/fotocopyarte/fotocopyportfolio.png",
+      "url": "proyectobase.html?id=fotocopyarte"
     },
     {
       "titulo": "Pósters Biennale de la Danse de Lyon",
       "año": "2025",
-      "imagen": "../assets/img/proyectos/biennale/los3.png",
-      "url": "proyectos/proyectobase.html?id=biennale"
+      "imagen": "assets/img/proyectos/biennale/los3.png",
+      "url": "proyectobase.html?id=biennale"
     },
     {
       "titulo": "Vuelta al Mundo en 8 Pliegos",
       "año": "2024",
-      "imagen": "../assets/img/proyectos/vuelta al mundo/1.jpg",
-      "url": "proyectos/proyectobase.html?id=mundo"
+      "imagen": "assets/img/proyectos/vuelta al mundo/1.jpg",
+      "url": "proyectobase.html?id=mundo"
     },
     {
       "titulo": "DTNT (MNAD)",
       "año": "2026",
-      "imagen": "../assets/img/proyectos/fanzine/6.png",
-      "url": "proyectos/proyectobase.html?id=dtnt"
+      "imagen": "assets/img/proyectos/fanzine/6.png",
+      "url": "proyectobase.html?id=dtnt"
     },
     {
       "titulo": "Visuales FW M26",
       "año": "2026",
-      "imagen": "../assets/img/proyectos/sin foto.png",
-      "url": "proyectos/proyectobase.html?id=fw"
+      "imagen": "assets/img/proyectos/sin foto.png",
+      "url": "proyectobase.html?id=fw"
     },
     {
       "titulo": "Pasaporte de Barrio",
       "año": "2026",
-      "imagen": "../assets/img/proyectos/pasaporte de barrio/panaderia.png",
-      "url": "proyectos/proyectobase.html?id=pasaporte"
+      "imagen": "assets/img/proyectos/pasaporte de barrio/panaderia.png",
+      "url": "proyectobase.html?id=pasaporte"
     },
     {
       "titulo": "Fábrica de la Desinformación",
       "año": "2026",
-      "imagen": "../assets/img/proyectos/desinformación/infografia.png",
-      "url": "proyectos/proyectobase.html?id=infografia"
+      "imagen": "assets/img/proyectos/desinformación/infografia.png",
+      "url": "proyectobase.html?id=infografia"
     },
     {
       "titulo": "Catalalata",
       "año": "2024",
-      "imagen": "../assets/img/proyectos/catalalata/catalalata 1.png",
-      "url": "proyectos/proyectobase.html?id=catalalata"
+      "imagen": "assets/img/proyectos/catalalata/catalalata 1.png",
+      "url": "proyectobase.html?id=catalalata"
     }
   ]
 }
