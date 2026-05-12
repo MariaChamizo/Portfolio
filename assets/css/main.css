@@ -288,7 +288,7 @@ header ul li .p-regular:hover {
   .home .capa2-letrasgigantes .h1 {
     font-size: clamp(60px, 30vw, 300px);
     letter-spacing: 0.067rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 }
 .home .capa2-letrasgigantes .h1:hover {
@@ -342,8 +342,8 @@ header ul li .p-regular:hover {
 }
 @media (max-width: 390px) {
   .home .info-sobremi-AMA a .h3-regular {
-    font-size: 1rem;
-    margin-top: -0.67rem;
+    font-size: 0.8rem;
+    margin-top: -2rem;
     margin-left: 1rem;
   }
 }
@@ -360,15 +360,15 @@ header ul li .p-regular:hover {
 }
 @media (max-width: 390px) {
   .home .info-sobremi-AMA .foto-maria {
-    width: 9rem;
-    height: 9rem;
+    width: 5rem;
+    height: 5rem;
     margin-left: 1rem;
   }
 }
 @media (max-width: 768px) {
   .home .info-sobremi-AMA .foto-maria {
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     margin-left: 1rem;
   }
 }
@@ -428,7 +428,7 @@ header ul li .p-regular:hover {
 }
 @media (max-width: 390px) {
   .home .info-lugar-LA {
-    margin-bottom: 120%;
+    margin-bottom: 50%;
     left: 80%;
   }
 }

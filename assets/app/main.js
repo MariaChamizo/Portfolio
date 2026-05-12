@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!proyectoId) return;
 
-        fetch(`./assets/app/infoproyectos.json`)
+        fetch(`${rutaBase}app/infoproyectos.json`)
             .then(res => res.json())
             .then(data => {
                 const p = data.infoproyectos.find(item => item.id === proyectoId);
@@ -308,7 +308,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error(err));
     }
 
-    // AQUÍ ESTÁ LA FUNCIÓN QUE ME COMÍ ANTES PARA QUE FUNCIONEN LOS TEXTOS EN MÓVIL
     function animarTextosMobile() {
         if (window.innerWidth > 768) return;
 
@@ -356,7 +355,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Removemos por si Barba se ha quedado con el listener antiguo
         galeria.removeEventListener('scroll', actualizarProyectoActivo);
         galeria.addEventListener('scroll', actualizarProyectoActivo);
         actualizarProyectoActivo(); 
@@ -367,7 +365,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const galeria = document.querySelector('#galeria-proyectos');
         if (!galeria) return;
 
-        fetch(`./assets/app/proyectos.json`)
+        fetch(`${rutaBase}app/proyectos.json`)
             .then(res => res.json())
             .then(datos => {
                 galeria.innerHTML = ''; 
@@ -384,7 +382,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         </a>
                     `;
                 });
-                // Llamamos a la animación de los textos DESPUÉS de inyectar las fotos
                 animarTextosMobile();
             })
             .catch(err => console.error(err));
@@ -395,7 +392,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const galeria = document.querySelector('#ilustraciones');
         if (!galeria) return;
 
-        fetch(`./assets/app/ilustraciones.json`)
+        fetch(`${rutaBase}app/ilustraciones.json`)
             .then(res => res.json())
             .then(datos => {
                 galeria.innerHTML = '';
