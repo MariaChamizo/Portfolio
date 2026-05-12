@@ -27,7 +27,7 @@
             @media (max-width: 390px) {
                 font-size: clamp(60px, 30vw, 300px); 
                 letter-spacing: 0.067rem; 
-                margin-bottom: 2rem;
+                margin-bottom: 5rem;
             }   
 
             &:hover {
@@ -73,7 +73,8 @@
             @media (max-width: 390px) {
                 margin-left: 0;
                 gap: 0.67rem;
-                flex-direction: column; 
+                flex-direction: row; 
+                gap:0.5rem;
             }
 
             .h3-regular{
@@ -86,6 +87,7 @@
                     font-size: 0.8rem;
                     margin-top: -2rem;
                     margin-left: 1rem;
+                    margin-top: 0rem;
                 }
             }
         }
@@ -121,7 +123,7 @@
 
         @media (max-width: 390px) {
             width: 80%;
-            top: 60%; 
+            top: 55%; 
             left: 80%;
         }
 
@@ -165,7 +167,7 @@
         text-align: right;
 
         @media (max-width: 390px) {
-            margin-bottom: 50%;
+            margin-bottom: 60%;
             left: 80%;
         }
 
