@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const rutaBase = 'assets/'; 
     
-
     // Animación Footer
     if (footerMarquee && marqueeContenido) {
         for (let i = 0; i < 8; i++) {
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // SÍLABAS INTERACTIVAS (inicio)
+    // SÍLABAS INTERACTIVAS
     function activarClicsSilabas() {
         const home      = document.querySelector(".home");
         const silabaAMA = document.querySelector("#silaba-ama");
@@ -163,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // SOBRE MÍ (animaciones con gsap)
+    // SOBRE MÍ
     function lanzarAnimacionesSobreMi() {
         const tl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 1});
         
@@ -204,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
             { opacity: 1, y: 0, duration: 0.6, stagger: { each: 0.1 }, ease: 'back.out(1.8)' }, '-=0.2'
         );
 
-        // Intento botón magnético del CV
         const cvBtn = document.querySelector('.informacion button');
         if (cvBtn) {
             cvBtn.addEventListener('mousemove', (e) => {
@@ -220,7 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        // Intento de que floten cosas
         document.querySelectorAll('.cosa img').forEach(img => {
             img.parentElement.addEventListener('mouseenter', () => {
                 gsap.to(img, { y: -8, rotation: 6, duration: 0.4, ease: 'back.out(2)' });
@@ -269,15 +266,13 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // proyectos individualmente -> esto me ha ayudado mucho la IA xq no era capaz
-    //Falta alguna info y fotos en el json que rellenaré más adelante. Aún no tengo los mockups :D
     function cargarDetalleProyecto() {
         const params = new URLSearchParams(window.location.search);
         const proyectoId = params.get('id');
 
         if (!proyectoId) return;
 
-        fetch(`assets/app/infoproyectos.json`)
+        fetch(`./assets/app/infoproyectos.json`)
             .then(res => res.json())
             .then(data => {
                 const p = data.infoproyectos.find(item => item.id === proyectoId);
@@ -313,9 +308,109 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error(err));
     }
 
-    // BARBA (esta librería es lo peor)
-    //si ves cosas raras es xq el gsap con barba se hace un lio que flipas
-    //bueno y con todo, hasta con las rutas (odio esta librería)
+    // AQUÍ ESTÁ LA FUNCIÓN QUE ME COMÍ ANTES PARA QUE FUNCIONEN LOS TEXTOS EN MÓVIL
+    function animarTextosMobile() {
+        if (window.innerWidth > 768) return;
+
+        const galeria = document.querySelector('#galeria-proyectos');
+        const proyectos = document.querySelectorAll('#galeria-proyectos a');
+
+        if (!galeria || proyectos.length === 0) return;
+
+        function actualizarProyectoActivo() {
+            if (galeria.scrollLeft <= 10) {
+                proyectos.forEach((p, index) => {
+                    const info = p.querySelector('.info-proyecto');
+                    if (info) {
+                        if (index === 0) info.classList.add('activa');
+                        else info.classList.remove('activa');
+                    }
+                });
+                return;
+            }
+
+            let distanciaMinima = Infinity;
+            let indiceActivo = -1;
+            const centroContenedor = galeria.getBoundingClientRect().left + (galeria.offsetWidth / 2);
+
+            proyectos.forEach((p, index) => {
+                const rect = p.getBoundingClientRect();
+                const centroItem = rect.left + (rect.width / 2);
+                const distancia = Math.abs(centroContenedor - centroItem);
+                
+                if (distancia < distanciaMinima) {
+                    distanciaMinima = distancia;
+                    indiceActivo = index;
+                }
+            });
+
+            proyectos.forEach((p, index) => {
+                const info = p.querySelector('.info-proyecto');
+                if (info) {
+                    if (index === indiceActivo) {
+                        info.classList.add('activa');
+                    } else {
+                        info.classList.remove('activa');
+                    }
+                }
+            });
+        }
+
+        // Removemos por si Barba se ha quedado con el listener antiguo
+        galeria.removeEventListener('scroll', actualizarProyectoActivo);
+        galeria.addEventListener('scroll', actualizarProyectoActivo);
+        actualizarProyectoActivo(); 
+    }
+
+    // Función para proyectos (JSON)
+    function cargarGaleriaProyectos() {
+        const galeria = document.querySelector('#galeria-proyectos');
+        if (!galeria) return;
+
+        fetch(`./assets/app/proyectos.json`)
+            .then(res => res.json())
+            .then(datos => {
+                galeria.innerHTML = ''; 
+                datos.proyectos.forEach(proyecto => {
+                    galeria.innerHTML += `
+                        <a href="${proyecto.url}" class="enlace-proyecto">
+                            <div class="proyecto">
+                                <div class="info-proyecto">
+                                    <p>${proyecto.año}</p>
+                                    <h4>${proyecto.titulo}</h4>
+                                </div>
+                                <img src="${proyecto.imagen}" alt="${proyecto.titulo}">
+                            </div>
+                        </a>
+                    `;
+                });
+                // Llamamos a la animación de los textos DESPUÉS de inyectar las fotos
+                animarTextosMobile();
+            })
+            .catch(err => console.error(err));
+    }
+
+    // Función para ILUSTRACIONES SOBRE MI (JSON)
+    function cargarIlustraciones() { 
+        const galeria = document.querySelector('#ilustraciones');
+        if (!galeria) return;
+
+        fetch(`./assets/app/ilustraciones.json`)
+            .then(res => res.json())
+            .then(datos => {
+                galeria.innerHTML = '';
+                datos.ilustraciones.forEach(ilustracion => {
+                    galeria.innerHTML += `
+                        <div class="cosa">
+                            <img src="${ilustracion.imagen}" alt="${ilustracion.nombre}">
+                            <p>${ilustracion.nombre}</p>
+                        </div>
+                    `;
+                });
+                lanzarAnimacionesSobreMi();
+            })
+            .catch(err => console.error(err));
+    }
 
     barba.init({
         preventRunning: true,
@@ -381,9 +476,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         ],
-// lo que puede hacer scroll y lo que no -> esto al final no lo he usado pero me ha dado miedo borrarlo :D
-//Esto estaba pensado para Barba, al parecer da muchos problemas con esto en el mobile 
-//Si te lo estoy diciendo que Barba solo da problemas (LO ODIO)
         views: [
             {
                 namespace: 'inicio',
@@ -395,6 +487,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             },
             {
+                namespace: 'proyectos',
+                afterEnter() {
+                    cargarGaleriaProyectos();
+                }
+            },
+            {
                 namespace: 'sobremi',
                 beforeEnter() {
                     document.body.classList.add('con-scroll');
@@ -403,23 +501,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 afterEnter() {
                     document.body.classList.add('con-scroll');
                     document.documentElement.classList.add('con-scroll');
-                    fetch(`assets/app/ilustraciones.json`)
-                        .then(res => res.json())
-                        .then(datos => {
-                            const galeria = document.querySelector('#ilustraciones');
-                            if (galeria) {
-                                galeria.innerHTML = '';
-                                datos.ilustraciones.forEach(ilustracion => {
-                                    galeria.innerHTML += `
-                                        <div class="cosa">
-                                            <img src="${ilustracion.imagen}" alt="${ilustracion.nombre}">
-                                            <p>${ilustracion.nombre}</p>
-                                        </div>
-                                    `;
-                                });
-                            }
-                            lanzarAnimacionesSobreMi();
-                        });
+                    cargarIlustraciones();
                 }
             },
             {
@@ -437,48 +519,13 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
     });
 
-    // PROYECTOS (JSON)
-    fetch(`assets/app/proyectos.json`)
-        .then(res => res.json())
-        .then(datos => {
-            const galeria = document.querySelector('#galeria-proyectos');
-            if (galeria) {
-                galeria.innerHTML = ''; 
-                datos.proyectos.forEach(proyecto => {
-                    galeria.innerHTML += `
-                        <a href="${proyecto.url}" class="enlace-proyecto">
-                            <div class="proyecto">
-                                <div class="info-proyecto">
-                                    <p>${proyecto.año}</p>
-                                    <h4>${proyecto.titulo}</h4>
-                                </div>
-                                <img src="${proyecto.imagen}" alt="${proyecto.titulo}">
-                            </div>
-                        </a>
-                    `;
-                });
-            }
-        });
+    // Llamadas iniciales al cargar la página directamente
+    if (document.querySelector('#galeria-proyectos')) {
+        cargarGaleriaProyectos();
+    }
 
-    //ILUSTRACIONES SOBRE MI (JSON)
-    if (document.querySelector('.sobre-mi')) { //aqui me ha tenido que ayudar la ia xq no le apetecía hacerme la animación
-        fetch(`assets/app/ilustraciones.json`)
-            .then(res => res.json())
-            .then(datos => {
-                const galeria = document.querySelector('#ilustraciones');
-                if (galeria) {
-                    galeria.innerHTML = '';
-                    datos.ilustraciones.forEach(ilustracion => {
-                        galeria.innerHTML += `
-                            <div class="cosa">
-                                <img src="${ilustracion.imagen}" alt="${ilustracion.nombre}">
-                                <p>${ilustracion.nombre}</p>
-                            </div>
-                        `;
-                    });
-                }
-                lanzarAnimacionesSobreMi();
-            });
+    if (document.querySelector('.sobre-mi')) {
+        cargarIlustraciones();
     }
 
     if (document.querySelector('.textos-contacto')) {

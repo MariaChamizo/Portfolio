@@ -6,6 +6,11 @@
   gap: 3.35rem;
   padding: 24px;
 
+  @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
   @media (max-width: 390px) {
       flex-direction: column;
       gap: 0.67rem;
@@ -19,6 +24,10 @@
     flex-direction: column;
     width: 33%;
 
+    @media (max-width: 768px) {
+        display: contents; 
+    }
+
     @media (max-width: 390px) {
         display: contents;
     }
@@ -27,8 +36,14 @@
         margin: 0px;
         line-height: 87%;
         letter-spacing: 0.15rem;
-        margin-bottom: 19px;
-        font-size: 7rem;
+        margin-bottom: 0.5rem;
+        font-size: 6rem;
+
+        @media (max-width: 768px) {
+            order: 1;
+            font-size: 6rem; 
+            margin-bottom: 1rem;
+        }
 
         @media (max-width: 390px) {
             order: 1;
@@ -40,11 +55,20 @@
 
     h4 {
       margin: 0px;
-      font-size: 1.8rem;
+      font-size: 1.2rem;
+      font-weight: 500;
       margin-top: 0rem;
       color: $acento;
       text-transform: uppercase;
       width: 50%;
+      margin-bottom: 6rem;
+
+      @media (max-width: 768px) {
+          order: 2;
+          width: 100%;
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+      }
 
       @media (max-width: 390px) {
           order: 2;
@@ -67,10 +91,19 @@
         gap: 0.67rem;
         font-size: 0.8rem;
 
+        @media (max-width: 768px) {
+            order: 4;
+            width: 100%;
+            flex-direction: row; 
+            gap: 2rem;
+        }
+
         @media (max-width: 390px) {
             order: 4;
+            flex-direction: column;
             margin-top: 1.34rem;
             width: 100%;
+            gap: 0.67rem;
         }
 
         a {
@@ -89,6 +122,13 @@
     align-items: flex-start;
     gap: 2.68rem;
 
+    @media (max-width: 768px) {
+        order: 3;
+        margin-left: 0;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
     @media (max-width: 390px) {
         order: 3;
         margin-left: 0;
@@ -100,15 +140,23 @@
     h5 {
         margin: 0px;
         
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+
         @media (max-width: 390px) {
-        font-size: 1rem;
-    }
+            font-size: 1rem;
+        }
     }
 
     p {
         margin: 0px;
         width: 30%;
         font-size: 0.8rem;
+
+        @media (max-width: 768px) {
+            width: 70%; 
+        }
 
         @media (max-width: 480px) {
             width: 100%;
@@ -120,6 +168,10 @@
     .formulariochuli {
         width: 100%;
         margin-top: 3.35rem;
+
+        @media (max-width: 768px) {
+            margin-top: 2rem;
+        }
 
         @media (max-width: 480px) {
             margin-top: 2rem;
@@ -145,7 +197,7 @@
                     width: 100%;
 
                     &:first-child {
-                        width: 50%;
+                        width: 50%; 
 
                         @media (max-width: 480px) {
                             width: 100%;

@@ -64,14 +64,10 @@
             transition: opacity 0.4s ease;
             white-space: nowrap;
 
-            @media (max-width: 768px) {
-                top: -53.6px; 
-            }
-
             p {
                 color: $acento;
                 font-size: 0.8rem; 
-                margin: 0 0 0.335rem 0; 
+                margin: 0 0 0.6rem 0; 
                 font-family: $body;
             }
 
@@ -83,34 +79,52 @@
                 letter-spacing: 0.335px; 
                 margin: 0;
                 font-family: $body;
+            }
 
-                @media (max-width: 768px) {
+            @media (max-width: 768px) {
+                top: -7rem; 
+                width: 100%; 
+                padding: 1rem; 
+                box-sizing: border-box;
+                white-space: normal; 
+                margin-bottom: 1rem;
+
+                /* Clase exclusiva para el JS en móvil, ahora sí, DENTRO del media query */
+                &.activa {
+                    opacity: 1;
+                }
+
+                h4 {
                     font-size: 0.8rem; 
+                    word-wrap: break-word; 
+                    margin-bottom: 0.4rem;
                 }
             }
         }
 
+        /* --- CONTROL DEL HOVER --- */
         &:hover, &:active {
-            flex: 0 0 402px; 
-            height: 402px; 
+            @media (min-width: 769px) {
+                flex: 0 0 402px; 
+                height: 402px; 
+
+                .proyecto img {
+                    transform: scale(1.05);
+                }
+
+                .info-proyecto {
+                    opacity: 1;
+                    transition-delay: 0.2s;
+                }
+            }
 
             @media (max-width: 768px) {
-                flex: 0 0 201px; 
-                height: 268px; 
-            }
-
-            @media (max-width: 390px) {
-                flex: 0 0 167.5px; 
-                height: 234.5px; 
-            }
-
-            .proyecto img {
-                transform: scale(1.05);
-            }
-
-            .info-proyecto {
-                opacity: 1;
-                transition-delay: 0.2s;
+                flex: 0 0 11rem; 
+                height: 11rem; 
+                
+                .proyecto img {
+                    transform: scale(1);
+                }
             }
         }
     }
