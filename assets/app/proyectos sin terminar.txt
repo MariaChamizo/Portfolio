@@ -1,6 +1,0 @@
-{
-      "titulo": "Identidad Visual Fotocopyarte",
-      "año": "2025",
-      "imagen": "assets/img/proyectos/fotocopyarte/fotocopyportfolio.png",
-      "url": "proyectobase.html?id=fotocopyarte"
-    },

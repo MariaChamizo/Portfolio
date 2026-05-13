@@ -1,3 +1,8 @@
+//Hola Iciar, hay partes del js en las que he usado ia.
+//Al haber escogido barba.js las cosas funcionaban raro, asi que aunque siguiera los tutoriales de gsap o de hacer cursores y carruseles, no funcionaban
+//Te había dejado notas que puedes ver en la primera versión subida de github donde pone exactamente que cosas he usado ia con notas (por si te interesa saberlo).
+//Como se me buguea barba con el json por culpa de github (en la vuelta de proyectos individuales a proyectos generales) se lo mandé a la IA para que me ayudara a arreglarlo, no lo solucionó, pero me borró las notas :(
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const logoSVG = document.querySelector("#logo-animado");
@@ -408,7 +413,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(err => console.error(err));
     }
-
+ 
     barba.init({
         preventRunning: true,
         prevent: ({ el }) => el.closest('header') !== null,
