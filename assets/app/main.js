@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 datos.ilustraciones.forEach(ilustracion => {
                     galeria.innerHTML += `
                         <div class="cosa">
-                            <img src="${ilustracion.imagen}" alt="${ilustracion.nombre}">
+                            <img src="${ilustracion.imagen}">
                             <p>${ilustracion.nombre}</p>
                         </div>
                     `;
