@@ -441,18 +441,19 @@ header ul li .p-regular:hover {
   top: 2.68rem;
   text-align: left;
 }
-@media (max-width: 390px) {
-  .home .info-roles-PO {
-    width: 80%;
-    top: 55%;
-    left: 80%;
-  }
-}
 @media (max-width: 430px) {
   .home .info-roles-PO {
     width: 80%;
-    top: 50%;
-    left: 60%;
+    top: 60%;
+    left: 15rem;
+  }
+}
+@media (max-width: 390px) {
+  .home .info-roles-PO {
+    width: 80%;
+    top: 60%;
+    left: 20rem;
+    margin-left: 1rem;
   }
 }
 .home .info-roles-PO .roles-lista {
@@ -512,7 +513,7 @@ header ul li .p-regular:hover {
 }
 @media (max-width: 390px) {
   .home .info-lugar-LA {
-    margin-bottom: 60%;
+    margin-bottom: 50%;
     left: 80%;
   }
 }
