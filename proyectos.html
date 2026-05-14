@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-    <!-- cosita de arriba en la pestaña-->
+        
     <title>Proyectos | Amapola</title>
     <link rel="icon" href="../assets/img/logo.svg" >
 
-    <!-- Iconos-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- pantalla de carga animada del principio -->
     <div id="pantalla-carga-inicio"></div> 
 
-    <!-- cusor superchuli -->
     <div class="cursor-superchuli"></div>
 
     <div data-barba="wrapper"> 
@@ -39,14 +33,14 @@
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="proyectos.html" class="p-regular-rosa">Proyectos</a></li>
+                    <li><a href="proyectos.html" class="p-regular-rosa" data-barba-prevent>Proyectos</a></li>
                     <li><a href="sobremi.html" class="p-regular">Sobre mí</a></li>
                     <li><a href="contacto.html" class="p-regular">Contacto</a></li>
                 </ul>
             </nav>
         </header> 
 
-        <main data-barba="container" data-barba-namespace="inicio"> 
+        <main data-barba="container" data-barba-namespace="proyectos"> 
         <div class="cortina-transicion"></div> 
 
         <div id="galeria-proyectos"></div>
@@ -66,7 +60,6 @@
 
     </div> 
 
-    <!-- JS y librerías -->
     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="assets/app/main.js"></script>

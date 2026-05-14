@@ -1511,7 +1511,7 @@ footer .footer-marquee .marquee-contenido a:hover {
   flex-direction: column;
   gap: 1.34px;
   margin-bottom: 2rem;
-  margin-top: 0px;
+  margin-top: 2rem;
   font-weight: 500;
   color: #232323;
 }

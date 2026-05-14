@@ -2,39 +2,39 @@
     "ilustraciones": [
         { 
         "nombre": "portátil", 
-        "imagen": "../assets/img/sobre mi/PORTATIL.svg" 
+        "imagen": "./../assets/img/sobremi/PORTATIL.svg" 
         },
         { 
         "nombre": "café en taza de cristal", 
-        "imagen": "../assets/img/sobre mi/CAFÉ EN TAZA DE CRISTAL.svg" 
+        "imagen": "./../assets/img/sobremi/CAFE.svg" 
         },
         { 
         "nombre": "vela aromática de café o canela", 
-        "imagen": "../assets/img/sobre mi/VELA CAFE.svg" 
+        "imagen": "./../assets/img/sobremi/VELA.svg" 
         },
         { 
         "nombre": "musica", 
-        "imagen": "../assets/img/sobre mi/CASCOS.svg" 
+        "imagen": "./../assets/img/sobremi/CASCOS.svg" 
         },
         { 
         "nombre": "calcetines divertidos", 
-        "imagen": "../assets/img/sobre mi/CALCETINES.svg" 
+        "imagen": "./../assets/img/sobremi/CALCETINES.svg" 
         },
         { 
         "nombre": "botella de agua", 
-        "imagen": "../assets/img/sobre mi/BOTELLA.svg" 
+        "imagen": "./../assets/img/sobremi/BOTELLA.svg" 
         },
         { 
         "nombre": "cuaderno lleno de pegatinas", 
-        "imagen": "../assets/img/sobre mi/CUADERNO.svg" 
+        "imagen": "./../assets/img/sobremi/CUADERNO.svg" 
         },
         { 
         "nombre": "gafas", 
-        "imagen": "../assets/img/sobre mi/GAFAS.svg" 
+        "imagen": "../assets/img/sobremi/GAFAS.svg" 
         },
         { 
         "nombre": "pinza para el pelo", 
-        "imagen": "../assets/img/sobre mi/PINZA.svg" 
+        "imagen": "./../assets/img/sobremi/PINZA.svg" 
         }
     ]
 }

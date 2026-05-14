@@ -280,7 +280,10 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`${rutaBase}app/infoproyectos.json`)
             .then(res => res.json())
             .then(data => {
-                const p = data.infoproyectos.find(item => item.id === proyectoId);
+                const listaProyectos = data.infoproyectos;
+                const indexActual = listaProyectos.findIndex(item => item.id === proyectoId);
+                const p = listaProyectos[indexActual];
+                
                 if (!p) return;
 
                 const tituloEl      = document.getElementById('proyecto-titulo');
@@ -415,6 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
  
     barba.init({
+        cacheIgnore: true,
         preventRunning: true,
         prevent: ({ el }) => el.closest('header') !== null,
 
@@ -490,8 +494,13 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             {
                 namespace: 'proyectos',
+                beforeEnter() {
+                    document.body.classList.add('con-scroll');
+                    document.documentElement.classList.add('con-scroll');
+                },
                 afterEnter() {
-                    cargarGaleriaProyectos();
+                     cargarGaleriaProyectos();
+                    
                 }
             },
             {
@@ -509,6 +518,7 @@ document.addEventListener("DOMContentLoaded", () => {
             {
                 namespace: 'detalle-proyecto',
                 beforeEnter() {
+                    document.body.classList.add('con-scroll');
                     document.body.classList.add('con-scroll');
                 },
                 beforeLeave() {
