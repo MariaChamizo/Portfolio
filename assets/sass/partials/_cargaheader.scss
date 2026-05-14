@@ -6,19 +6,24 @@ header {
     display: flex;
     position: fixed;
     justify-content: left;
-    margin-left: 4rem;
+    padding-left: 4rem;
     gap: 1rem;
     align-items: center;
     margin-top: 2.25rem;
     background-color: transparent;
     width: 100%;
     z-index: 9999; 
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
-        margin-left: 5%;
+        padding-left: 5%;
+        margin-left: 0%;
         margin-top: 1.5rem;
         justify-content: space-between;
         padding-right: 10%;
+    }
+    @supports (-webkit-touch-callout: none) { //Esto es oara que no me de problemas en ig/facebook/tiktok... Lo estoy mandando a una empresa como portfolio
+        margin-top: max(2.25rem, env(safe-area-inset-top));
     }
 
     .logo {
@@ -50,13 +55,16 @@ header {
         justify-content: space-between;
         gap: 4.5rem;
         margin-left: 3rem;
+         flex-wrap: nowrap;
 
         @media (max-width: 768px) {
             gap: 2rem;
+            margin-left: 1rem; 
         }
 
         @media (max-width: 390px) {
             gap: 0.8rem;
+            margin-left: 0.5rem;
         }
 
         li {

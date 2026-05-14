@@ -1,7 +1,7 @@
 .home {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 85dvh;
     overflow: hidden;
 
     .capa2-letrasgigantes {
@@ -23,11 +23,20 @@
             white-space: nowrap;
             pointer-events: auto;     
             letter-spacing: 0.67rem;
+
+            @supports (font-size: 1svw) {
+                font-size: clamp(120px, 25svw, 500px);
+            }
+
             
             @media (max-width: 390px) {
                 font-size: clamp(60px, 30vw, 300px); 
                 letter-spacing: 0.067rem; 
                 margin-bottom: 5rem;
+                
+                @supports (font-size: 1svw) {
+                    font-size: clamp(60px, 30svw, 300px);
+                }
             }   
 
             &:hover {
