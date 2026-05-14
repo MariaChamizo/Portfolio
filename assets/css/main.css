@@ -308,7 +308,7 @@ header ul li .p-regular:hover {
   .home .capa2-letrasgigantes .h1 {
     font-size: clamp(60px, 30vw, 300px);
     letter-spacing: 0.067rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   @supports (font-size: 1svw) {
     .home .capa2-letrasgigantes .h1 {
@@ -320,7 +320,7 @@ header ul li .p-regular:hover {
   .home .capa2-letrasgigantes .h1 {
     font-size: clamp(60px, 30vw, 300px);
     letter-spacing: 0.067rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   @supports (font-size: 1svw) {
     .home .capa2-letrasgigantes .h1 {

@@ -32,7 +32,7 @@
             @media (max-width: 390px) {
                 font-size: clamp(60px, 30vw, 300px); 
                 letter-spacing: 0.067rem; 
-                margin-bottom: 5rem;
+                margin-bottom: 2rem;
 
                 @supports (font-size: 1svw) {
                     font-size: clamp(60px, 30svw, 300px);
@@ -41,7 +41,7 @@
             @media (max-width: 430px) {
                 font-size: clamp(60px, 30vw, 300px); 
                 letter-spacing: 0.067rem; 
-                margin-bottom: 5rem;
+                margin-bottom: 2rem;
                 @supports (font-size: 1svw) {
                     font-size: clamp(60px, 30svw, 300px);
                 }
