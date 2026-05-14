@@ -18,6 +18,13 @@
       margin-bottom: 3.35rem;
       margin-top: 27px;
   }
+  @media (max-width: 430px) {
+      flex-direction: column;
+      gap: 0.67rem;
+      padding: 13px;
+      margin-bottom: 3.35rem;
+      margin-top: 27px;
+  }
 
   .textos-contacto {
     display: flex;
@@ -29,6 +36,9 @@
     }
 
     @media (max-width: 390px) {
+        display: contents;
+    }
+    @media (max-width: 430px) {
         display: contents;
     }
 
@@ -46,6 +56,12 @@
         }
 
         @media (max-width: 390px) {
+            order: 1;
+            font-size: 5rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        @media (max-width: 430px) {
             order: 1;
             font-size: 5rem;
             margin-bottom: 0;
@@ -80,6 +96,16 @@
           top: -0.67rem;
           margin-bottom: 2rem;
       }
+      @media (max-width: 430px) {
+          order: 2;
+          width: 100%;
+          margin-top: 0;
+          padding-top: 0;
+          line-height: 1;
+          font-size: 1.3rem;
+          top: -0.67rem;
+          margin-bottom: 2rem;
+      }
     }
 
     .redes-contacto {
@@ -99,6 +125,13 @@
         }
 
         @media (max-width: 390px) {
+            order: 4;
+            flex-direction: column;
+            margin-top: 1.34rem;
+            width: 100%;
+            gap: 0.67rem;
+        }
+         @media (max-width: 430px) {
             order: 4;
             flex-direction: column;
             margin-top: 1.34rem;
@@ -136,6 +169,13 @@
         margin-top: 1rem;
         gap: 1rem;
     }
+    @media (max-width: 430px) {
+        order: 3;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
 
     h5 {
         margin: 0px;
@@ -145,6 +185,9 @@
         }
 
         @media (max-width: 390px) {
+            font-size: 1rem;
+        }
+        @media (max-width: 430px) {
             font-size: 1rem;
         }
     }
@@ -159,6 +202,11 @@
         }
 
         @media (max-width: 480px) {
+            width: 100%;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 430px) {
             width: 100%;
             font-size: 0.8rem;
             margin-bottom: 0.5rem;
@@ -279,6 +327,11 @@
                     padding: 0.5rem 0.8rem;
                     padding-bottom: 0;
                 }
+                @media (max-width: 430px) {
+                    align-self: flex-start;
+                    padding: 0.5rem 0.8rem;
+                    padding-bottom: 0;
+                }
 
                 .small {
                     margin: 0;
@@ -291,11 +344,17 @@
                     @media (max-width: 390px) {
                         font-size: 1rem;
                     }
+                    @media (max-width: 430px) {
+                        font-size: 1rem;
+                    }
                 }
 
                 span {
                     @media (max-width: 480px) {
                         font-size: 0.54rem;
+                    }
+                    @media (max-width: 430px) {
+                        font-size: 0.8rem;
                     }
                 }
 

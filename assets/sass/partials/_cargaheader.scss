@@ -101,6 +101,11 @@ header {
 
                 @media (max-width: 390px) {
                 font-size: 0.7rem;
+                
+            }
+            @media (max-width: 480px) {
+                font-size: 0.7rem;
+                
             }
                 &:hover {
                     color: $acento;
