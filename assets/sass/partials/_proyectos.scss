@@ -82,14 +82,13 @@
             }
 
             @media (max-width: 768px) {
-                top: -7rem; 
+                top: -10rem; 
                 width: 100%; 
                 padding: 1rem; 
                 box-sizing: border-box;
                 white-space: normal; 
                 margin-bottom: 1rem;
 
-                /* Clase exclusiva para el JS en móvil, ahora sí, DENTRO del media query */
                 &.activa {
                     opacity: 1;
                 }
