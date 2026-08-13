@@ -18,6 +18,7 @@
         margin-top: 26.8px; 
         overflow: visible;
         padding-right: 2rem;
+        padding-left: 0.5rem;
     }
     @media (max-width: 430px) {
         grid-template-columns: 1fr;
@@ -25,6 +26,7 @@
         margin-top: 26.8px; 
         padding-right: 2rem;
         overflow: visible;
+        padding-left: 0.5rem;
     }
 
     .miimagen-sobremi {
@@ -68,6 +70,14 @@
             }
         }
     }
+    h2{
+        @media (max-width: 390px) {
+            font-size: 1.5rem;
+        }
+        @media (max-width: 430px) {
+            font-size: 1.5rem;
+        }
+    }
 
     .info-sobre-mi {
         grid-column: 2;
@@ -90,14 +100,14 @@
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1fr;
-            padding: 1.34rem 1.005rem;
+            padding: 2rem 2rem;
             gap: 1.675rem;
         }
         @media (max-width: 430px) {
             grid-column: 1;
             grid-row: 2;
             grid-template-columns: 1fr;
-            padding: 1.34rem 1.005rem;
+            padding: 2rem 2rem;
             gap: 1.675rem;
         }
 

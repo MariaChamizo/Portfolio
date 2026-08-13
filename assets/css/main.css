@@ -761,6 +761,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     margin-top: 26.8px;
     overflow: visible;
     padding-right: 2rem;
+    padding-left: 0.5rem;
   }
 }
 @media (max-width: 430px) {
@@ -770,6 +771,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     margin-top: 26.8px;
     padding-right: 2rem;
     overflow: visible;
+    padding-left: 0.5rem;
   }
 }
 .sobre-mi .miimagen-sobremi {
@@ -826,6 +828,16 @@ footer .footer-marquee .marquee-contenido a:hover {
        object-position: center 25%;
   }
 }
+@media (max-width: 390px) {
+  .sobre-mi h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 430px) {
+  .sobre-mi h2 {
+    font-size: 1.5rem;
+  }
+}
 .sobre-mi .info-sobre-mi {
   grid-column: 2;
   grid-row: 1;
@@ -849,7 +861,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     grid-column: 1;
     grid-row: 2;
     grid-template-columns: 1fr;
-    padding: 1.34rem 1.005rem;
+    padding: 2rem 2rem;
     gap: 1.675rem;
   }
 }
@@ -858,7 +870,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     grid-column: 1;
     grid-row: 2;
     grid-template-columns: 1fr;
-    padding: 1.34rem 1.005rem;
+    padding: 2rem 2rem;
     gap: 1.675rem;
   }
 }
