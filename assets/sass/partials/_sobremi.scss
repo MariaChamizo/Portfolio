@@ -17,11 +17,13 @@
         margin-bottom: 26.8px; 
         margin-top: 26.8px; 
         overflow: visible;
+        padding-right: 2rem;
     }
     @media (max-width: 430px) {
         grid-template-columns: 1fr;
         margin-bottom: 26.8px; 
         margin-top: 26.8px; 
+        padding-right: 2rem;
         overflow: visible;
     }
 

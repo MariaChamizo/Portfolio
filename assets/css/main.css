@@ -444,14 +444,14 @@ header ul li .p-regular:hover {
 @media (max-width: 430px) {
   .home .info-roles-PO {
     width: 80%;
-    top: 60%;
+    top: 55%;
     left: 15rem;
   }
 }
 @media (max-width: 390px) {
   .home .info-roles-PO {
     width: 80%;
-    top: 60%;
+    top: 55%;
     left: 20rem;
     margin-left: 1rem;
   }
@@ -760,6 +760,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     margin-bottom: 26.8px;
     margin-top: 26.8px;
     overflow: visible;
+    padding-right: 2rem;
   }
 }
 @media (max-width: 430px) {
@@ -767,6 +768,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     grid-template-columns: 1fr;
     margin-bottom: 26.8px;
     margin-top: 26.8px;
+    padding-right: 2rem;
     overflow: visible;
   }
 }
@@ -1802,14 +1804,14 @@ footer .footer-marquee .marquee-contenido a:hover {
 @media (max-width: 900px) {
   .proyecto-container {
     grid-template-columns: minmax(0, 1fr);
-    margin-top: 80.4px;
+    margin-top: 3rem;
     padding: 0;
     gap: 20.1px;
   }
 }
 @media (max-width: 390px) {
   .proyecto-container {
-    margin-top: 0.67rem;
+    margin-top: 1rem;
   }
 }
 
@@ -1869,7 +1871,7 @@ footer .footer-marquee .marquee-contenido a:hover {
     margin-bottom: 0;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.8rem;
   }
 }
 .info-col #proyecto-etiquetas span {
