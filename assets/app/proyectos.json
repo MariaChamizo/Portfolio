@@ -3,20 +3,8 @@
     {
       "titulo": "Visuales FW M26",
       "año": "2026",
-      "imagen": "assets/img/proyectos/fashion/4.5.jpg",
+      "imagen": "assets/img/proyectos/fashion/p.jpg",
       "url": "proyectobase.html?id=fw"
-    },
-    {
-      "titulo": "DTNT (MNAD)",
-      "año": "2026",
-      "imagen": "assets/img/proyectos/fanzine/6.jpg",
-      "url": "proyectobase.html?id=dtnt"
-    },
-    {
-      "titulo": "Identidad Visual Fotocopyarte",
-      "año": "2025",
-      "imagen": "assets/img/proyectos/fotocopyarte/fotocopyportfolio.png",
-      "url": "proyectobase.html?id=fotocopyarte"
     },
     {
       "titulo": "Pósters Biennale de la Danse de Lyon",
@@ -25,22 +13,28 @@
       "url": "proyectobase.html?id=biennale"
     },
     {
-      "titulo": "Pasaporte de Barrio",
+      "titulo": "DTNT (MNAD)",
       "año": "2026",
-      "imagen": "assets/img/proyectos/pasaporte de barrio/panaderia.png",
-      "url": "proyectobase.html?id=pasaporte"
+      "imagen": "assets/img/proyectos/fanzine/8.jpg",
+      "url": "proyectobase.html?id=dtnt"
     },
     {
-      "titulo": "Fábrica de la Desinformación",
-      "año": "2026",
-      "imagen": "assets/img/proyectos/desinformación/infografia.png",
-      "url": "proyectobase.html?id=infografia"
+      "titulo": "Diccionario del Diablo (vs.Clásica)",
+      "año": "2025",
+      "imagen": "assets/img/proyectos/diccionario clasico/1.jpg",
+      "url": "proyectobase.html?id=clasico"
     },
     {
-      "titulo": "Catalalata",
-      "año": "2024",
-      "imagen": "assets/img/proyectos/catalalata/catalalata 1.png",
-      "url": "proyectobase.html?id=catalalata"
+      "titulo": "Diccionario del Diablo (vs.Experimental)",
+      "año": "2025",
+      "imagen": "assets/img/proyectos/diccionario experimental/2.jpg",
+      "url": "proyectobase.html?id=experimental"
+    },
+    {
+      "titulo": "Armilla - Ciudades Invisibles de Ítalo Calvino",
+      "año": "2025",
+      "imagen": "assets/img/proyectos/armilla/p.jpg",
+      "url": "proyectobase.html?id=armilla"
     },
     {
       "titulo": "Vuelta al Mundo en 8 Pliegos",
@@ -49,9 +43,15 @@
       "url": "proyectobase.html?id=mundo"
     },
     {
-      "titulo": "Manifiesto de Diseño",
+      "titulo": "Fábrica de la Desinformación",
+      "año": "2026",
+      "imagen": "assets/img/proyectos/desinformación/infografia.png",
+      "url": "proyectobase.html?id=infografia"
+    },
+    {
+      "titulo": "Manifiesto del Diseño",
       "año": "2024",
-      "imagen": "assets/img/proyectos/manifiesto diseño/letras.jpg",
+      "imagen": "assets/img/proyectos/manifiesto diseño/general.jpg",
       "url": "proyectobase.html?id=manifiesto"
     }
   ]

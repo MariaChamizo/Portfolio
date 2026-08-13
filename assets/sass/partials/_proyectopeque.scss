@@ -1,14 +1,13 @@
-//Para el responsive aquí he metido de -900 tmb porque quedaba raro el cambio
 .proyecto-container {
     margin-top: 24.12px;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr; 
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
     gap: 33.5px;
     align-items: start;
 
     @media (max-width: 900px) {
-        grid-template-columns: 1fr; 
-        margin-top: 80.4px; 
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 80.4px;
         padding: 0;
         gap: 20.1px;
     }
@@ -19,35 +18,52 @@
 }
 
 
+// IMÁGENES + VÍDEO
 #proyecto-imagenes {
     display: flex;
     flex-direction: column;
-    gap: 0px; 
+    gap: 0;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
 
     @media (max-width: 900px) {
-        order: 2; 
+        order: 2;
     }
 
-    img {
+    img,
+    video {
+        display: block;
         width: 100%;
-        aspect-ratio: 4 / 3; 
-        object-fit: cover; 
-}
+        max-width: 100%;
+        min-width: 0;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    video {
+        height: auto;
+        width: 100%;
+    }
 }
 
+
+// COLUMNA DE INFORMACIÓN
 .info-col {
-    position: fixed; 
+    position: fixed;
     top: 80.4px;
     margin-left: 60%;
-    
+
     @media (max-width: 900px) {
-        position: relative; 
+        position: relative;
         top: 0;
         margin-left: 0;
-        order: 1; 
+        order: 1;
         padding: 1rem;
     }
 
+
+    // ETIQUETAS
     #proyecto-etiquetas {
         display: flex;
         flex-direction: column;
@@ -59,7 +75,7 @@
 
         @media (max-width: 390px) {
             margin-bottom: 0;
-            flex-direction: row; 
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
@@ -74,13 +90,14 @@
 
             @media (max-width: 390px) {
                 font-size: 0.7rem;
-                padding: 0; 
-                margin-bottom: 2rem;
-                margin:0;
+                padding: 0;
+                margin: 0;
             }
         }
     }
 
+
+    // HEADER DEL PROYECTO
     .header-proyecto {
         margin-bottom: 20.1px;
 
@@ -95,11 +112,13 @@
             font-weight: 500;
             color: $acento;
             margin-bottom: 1.34rem;
+
             @media (max-width: 768px) {
                 font-size: 1rem;
                 margin-bottom: 1rem;
                 margin-top: 2rem;
             }
+
             @media (max-width: 390px) {
                 font-size: 1rem;
                 margin-bottom: 1rem;
@@ -107,8 +126,9 @@
             }
         }
 
+
         #proyecto-titulo {
-            font-family:$tittle;
+            font-family: $tittle;
             font-size: 3.35rem;
             line-height: 100%;
             margin-top: 0.67rem;
@@ -125,6 +145,8 @@
         }
     }
 
+
+    // DESCRIPCIÓN
     #proyecto-descripcion {
         font-family: $body;
         line-height: 150%;
@@ -142,8 +164,40 @@
             margin-bottom: 3rem;
         }
     }
+
+    #proyecto-enlace,
+    .enlace-externo {
+        margin-top: 1rem;
+        display: none; 
+        font-family: $body;
+        line-height: 150%;
+        font-size: 0.8rem;
+        font-weight: bold;
+        max-width: 450px;
+        color: $negro;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: $negro;
+        transition: color 0.3s ease;
+
+        @media (max-width: 900px) {
+            max-width: 100%;
+        }
+
+        @media (max-width: 390px) {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            color: $acento;
+            text-decoration-color: $acento;
+        }
+    }
 }
 
+
+// BOTÓN VOLVER
 .back-btn {
     display: inline-block;
     margin-bottom: 26.8px;

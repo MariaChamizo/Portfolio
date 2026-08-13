@@ -1795,13 +1795,13 @@ footer .footer-marquee .marquee-contenido a:hover {
 .proyecto-container {
   margin-top: 24.12px;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 33.5px;
   align-items: start;
 }
 @media (max-width: 900px) {
   .proyecto-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     margin-top: 80.4px;
     padding: 0;
     gap: 20.1px;
@@ -1816,18 +1816,29 @@ footer .footer-marquee .marquee-contenido a:hover {
 #proyecto-imagenes {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
 }
 @media (max-width: 900px) {
   #proyecto-imagenes {
     order: 2;
   }
 }
-#proyecto-imagenes img {
+#proyecto-imagenes img,
+#proyecto-imagenes video {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#proyecto-imagenes video {
+  height: auto;
+  width: 100%;
 }
 
 .info-col {
@@ -1873,7 +1884,6 @@ footer .footer-marquee .marquee-contenido a:hover {
   .info-col #proyecto-etiquetas span {
     font-size: 0.7rem;
     padding: 0;
-    margin-bottom: 2rem;
     margin: 0;
   }
 }
@@ -1943,6 +1953,39 @@ footer .footer-marquee .marquee-contenido a:hover {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
+}
+.info-col #proyecto-enlace,
+.info-col .enlace-externo {
+  margin-top: 1rem;
+  display: none;
+  font-family: "Poppins", sans-serif;
+  line-height: 150%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  max-width: 450px;
+  color: #232323;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #232323;
+  transition: color 0.3s ease;
+}
+@media (max-width: 900px) {
+  .info-col #proyecto-enlace,
+  .info-col .enlace-externo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .info-col #proyecto-enlace,
+  .info-col .enlace-externo {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+.info-col #proyecto-enlace:hover,
+.info-col .enlace-externo:hover {
+  color: #FF0068;
+  text-decoration-color: #FF0068;
 }
 
 .back-btn {

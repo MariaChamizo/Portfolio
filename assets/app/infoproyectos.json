@@ -1,133 +1,399 @@
 {
-    "infoproyectos": [
+  "infoproyectos": [
+    {
+      "id": "manifiesto",
+      "etiquetas": [
+        "diseño editorial",
+        "tipografía",
+        "fanzine",
+        "experimental",
+        "Adobe Ilustrator",
+        "Adobe Photoshop"
+      ],
+      "año": "2024",
+      "titulo": "Manifiesto de Diseño",
+      "url": "proyectobase.html?id=manifiesto",
+      "descripcion": "Este proyecto reúne las palabras clave que definen mi visión del buen diseño, basándose en la idea: “Piensa antes de hablar”. Esta frase representa las etapas del proceso: pensar (análisis, ideación, bocetos y prototipado) y hablar (resultado e interacción con el usuario).El manifiesto se presenta en un vinilo, invitando al usuario a la escucha. Está alojado en una funda tipo díptico con un texto que resulta ilegible a primera vista; aquí, las letras se deslizan en lugar de pasar las páginas. Para revelar el mensaje, el usuario debe extraer las láminas de poliéster e interactuar con el entorno. Al hacerlo, las letras se ordenan y el mensaje se vuelve legible, creando una experiencia de descubrimiento y participación activa en la revelación del manifiesto.",
+      "media": [
         {
-            "id": "manifiesto",
-            "etiquetas": ["diseño editorial", "tipografía","fanzine", "experimental","Adobe Ilustrator","Adobe Photoshop"],
-            "año": "2024",
-            "titulo": "Manifiesto de Diseño",
-            "url": "proyectobase.html?id=manifiesto",
-            "descripcion": "Este proyecto reúne las palabras clave que definen mi visión del buen diseño, basándose en la idea: “Piensa antes de hablar”. Esta frase representa las etapas del proceso: pensar (análisis, ideación, bocetos y prototipado) y hablar (resultado e interacción con el usuario).El manifiesto se presenta en un vinilo, invitando al usuario a la escucha. Está alojado en una funda tipo díptico con un texto que resulta ilegible a primera vista; aquí, las letras se deslizan en lugar de pasar las páginas. Para revelar el mensaje, el usuario debe extraer las láminas de poliéster e interactuar con el entorno. Al hacerlo, las letras se ordenan y el mensaje se vuelve legible, creando una experiencia de descubrimiento y participación activa en la revelación del manifiesto.",
-            "imagenes": [
-                "assets/img/proyectos/manifiesto diseño/general.jpg",
-                 "assets/img/proyectos/manifiesto diseño/todo.jpg",
-                "assets/img/proyectos/manifiesto diseño/letras.jpg"
-            ]
-        },
-        {
-            "id": "fotocopyarte",
-            "etiquetas": ["branding","Adobe Ilustrator","Adobe InDesign","Figma"],
-            "año": "2025",
-            "titulo": "Identidad Visual Fotocopyarte",
-            "url": "proyectobase.html?id=fotocopyarte",
-            "descripcion": "Para Fotocopyarte, empresa de impresión y personalización, desarrollé el diseño gráfico y el análisis estratégico de la marca en estrecha colaboración con los equipos de marketing y desarrollo web. El reto era proyectar una imagen profesional y de total confianza, pero manteniendo una personalidad cercana y amable; para lograrlo, conceptualicé un branding inspirado en la creatividad del sector (cartuchos de tinta, regalos, cámaras y papel), destacando un logotipo cuya tipografía de esquinas curvas evoca sutilmente el doblez de una hoja. Este universo visual se estandarizó en un manual de identidad y se aplicó a múltiples soportes físicos como rótulos, tarjetas de visita y packaging. Además, destaca especialmente la estrategia visual creada para el entorno digital, donde diseñé una línea gráfica para redes sociales altamente coherente y atractiva que logra trasladar a la perfección esa mezcla de profesionalidad y accesibilidad directamente a la audiencia.",
-            "imagenes": [
-                "assets/img/proyectos/fotocopyarte/1.jpg",
-                "assets/img/proyectos/fotocopyarte/3.jpg",
-                "assets/img/proyectos/fotocopyarte/2.jpg",
-                "assets/img/proyectos/fotocopyarte/4.jpg"
-            ]
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/manifiesto diseño/general.jpg"
         },
         {
-            "id": "biennale",
-            "etiquetas": ["cartel", "serie", "experimental","Adobe Ilustrator","Adobe Photoshop"],
-            "año": "2025",
-            "titulo": "Pósters Biennale de la Danse de Lyon",
-            "url": "proyectobase.html?id=biennale",
-            "descripcion": "Esta serie de carteles experimentales para la Biennale de la Danse explora la premisa del baile como destructor de barreras. Para capturar la energía del movimiento, desarrollé una tipografía expresiva creada a partir de trazos manuales con tinta china, posteriormente procesados y vectorizados en Illustrator. Esta manipulación gráfica transforma las letras en una metáfora visual de la música, donde el grosor variable representa el volumen, las curvas fluidas simbolizan la melodía y la disposición fragmentada evoca el ritmo. La combinación de esta tipografía gestual con siluetas humanas en acción y una paleta de colores vibrantes da como resultado una composición donde texto y cuerpo bailan juntos, rompiendo los límites del cartel tradicional.",
-            "imagenes": [
-                "assets/img/proyectos/biennale/los3.png",
-                 "assets/img/proyectos/biennale/verde.png",
-                 "assets/img/proyectos/biennale/2.png",
-                 "assets/img/proyectos/biennale/3.png"
-                
-            ]
+          "tipo": "video",
+          "src": "assets/img/proyectos/manifiesto diseño/v.mp4"
         },
         {
-            "id": "mundo",
-            "etiquetas": ["editorial","fanzine","tipografía","Julio Verne","Adobe InDesign"],
-            "año": "2024",
-            "titulo": "Vuelta al Mundo en 8 Pliegos",
-            "url": "proyectobase.html?id=mundo",
-            "descripcion": "Este fanzine explora el alfabeto latino alrededor del mundo, mostrando cómo los caracteres no alfabéticos reflejan cultura. Adaptando La vuelta al mundo en 80 días, cada página recorre un país distinto cuidando la adaptación y creación de un nuevo recorrido al estilo de Julio Verne. Inspirado en el diseño de Lucille Tenazas, combina tipografía y transparencias con ilustraciones creadas a partir de los caracteres de cada idioma. Usando papel convencional y poliéster genera capas translúcidas que jerarquizan palabras y dan tridimensionalidad. Con un sentido artesanal, como un cuaderno de viaje, encontramos una encuadernación japonesa con hilo fino casi invisible. Invita al lector a viajar entre culturas y sentir a Julio Verne en cada letra y símbolo.",
-            "imagenes": [
-                "assets/img/proyectos/vuelta al mundo/1.jpg",
-                 "assets/img/proyectos/vuelta al mundo/2.jpg",
-                 "assets/img/proyectos/vuelta al mundo/3.jpg",
-                 "assets/img/proyectos/vuelta al mundo/4.jpg",
-                 "assets/img/proyectos/vuelta al mundo/5.jpg",
-                 "assets/img/proyectos/vuelta al mundo/6.jpg"
-                
-            ]
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/manifiesto diseño/todo.jpg"
         },
         {
-            "id": "dtnt",
-            "etiquetas": ["diseño editorial","investigación","tipografía","Museo Nacional de Artes Decorativas","Adobe Ilustrator","Blender","Adobe Photoshop","Adobe InDesign"],
-            "año": "2025",
-            "titulo": "DTNT (MNAD)",
-            "url": "proyectobase.html?id=dtnt",
-            "descripcion": "Este proyecto de diseño editorial explora la paradoja de la temporalidad vinculando la mecánica de un reloj de Joseph Anton Kosler del siglo XIX con la profundidad filosófica de San Agustín. A través de una narrativa visual experimental que emplea transparencias, troqueles y una tipografía fragmentada, el fanzine materializa la distentio animi agustiniana, contrastando la precisión de la relojería clásica con el caos de impulsos y la inmediatez que define nuestra atención en la era digital. El recorrido táctil de la pieza culmina en un espejo que atrapa el reflejo del lector, deteniendo la carrera infinita hacia el futuro para convertir el objeto en un dispositivo de resistencia que nos obliga, por fin, a habitar y confrontar el presente.",
-            "imagenes": [
-               "assets/img/proyectos/fanzine/6.jpg",
-                 "assets/img/proyectos/fanzine/2.png",
-                "assets/img/proyectos/fanzine/3.png",
-                "assets/img/proyectos/fanzine/4.png",
-                "assets/img/proyectos/fanzine/1.png",
-                "assets/img/proyectos/fanzine/5.png",
-                "assets/img/proyectos/fanzine/7.jpg"
-            ]
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/manifiesto diseño/letras.jpg"
+        }
+      ]
+    },
+    {
+      "id": "fotocopyarte",
+      "etiquetas": [
+        "branding",
+        "Adobe Ilustrator",
+        "Adobe InDesign",
+        "Figma"
+      ],
+      "año": "2025",
+      "titulo": "Identidad Visual Fotocopyarte",
+      "url": "proyectobase.html?id=fotocopyarte",
+      "descripcion": "Para Fotocopyarte, empresa de impresión y personalización, desarrollé el diseño gráfico y el análisis estratégico de la marca en estrecha colaboración con los equipos de marketing y desarrollo web. El reto era proyectar una imagen profesional y de total confianza, pero manteniendo una personalidad cercana y amable; para lograrlo, conceptualicé un branding inspirado en la creatividad del sector (cartuchos de tinta, regalos, cámaras y papel), destacando un logotipo cuya tipografía de esquinas curvas evoca sutilmente el doblez de una hoja. Este universo visual se estandarizó en un manual de identidad y se aplicó a múltiples soportes físicos como rótulos, tarjetas de visita y packaging. Además, destaca especialmente la estrategia visual creada para el entorno digital, donde diseñé una línea gráfica para redes sociales altamente coherente y atractiva que logra trasladar a la perfección esa mezcla de profesionalidad y accesibilidad directamente a la audiencia.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fotocopyarte/1.jpg"
         },
         {
-            "id": "fw",
-            "etiquetas": ["audiovisual","reactivo","Fashion Week Madrid 2026","Touch Designer","Resolume","Adobe AfterEffects"],
-            "año": "2025",
-            "titulo": "Visuales FW M26",
-            "url": "proyectobase.html?id=fw",
-            "descripcion": "Para la Madrid Fashion Week 2026, codiseñé los visuales del desfile del diseñador Pomperre en un gran proyecto multidisciplinar desarrollado junto a la revista NEO2, la Escuela Superior de Diseño de Madrid y profesionales de escenografía, maquillaje y sonido. Para plasmar la narrativa de la colección, inspirada en El Lago de los Cisnes, creamos una experiencia audiovisual inmersiva y reactiva. La pieza central consistió en un cisne 3D modelado en Blender con texturas de cristal y porcelana, el cual integramos sobre un fondo generativo. Utilizando TouchDesigner y Resolume, programamos un sistema interactivo donde tanto la iluminación del modelado como la profundidad de campo y nitidez de la imagen reaccionaban en tiempo real, resultando en una obra digital viva y dinámica que envolvió y elevó la presentación de la colección.",
-            "imagenes": [
-                "assets/img/proyectos/fashion/4.jpg",
-                 "assets/img/proyectos/fashion/3.jpg",
-                "assets/img/proyectos/fashion/1.jpeg",
-                "assets/img/proyectos/fashion/2.jpg"
-            ]
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fotocopyarte/3.jpg"
         },
         {
-            "id": "pasaporte",
-            "etiquetas": ["diseño de servicios","publicidad","identidad visual","Adobe Illustrator","Procreate","Adobe InDesign"],
-            "año": "2025",
-            "titulo": "Pasaporte de Barrio",
-            "url": "proyectobase.html?id=pasaporte",
-            "descripcion": "Desarrollado en codiseño junto a otra diseñadora gráfica, este proyecto consistió en la creación de la identidad visual para 'Pasaporte de Barrio', una iniciativa orientada a fomentar el consumo en el comercio local. Nuestro reto principal fue dotar a este proyecto de una gráfica fresca, divertida y muy amable, pensada específicamente para conectar y acercar el comercio de proximidad a un público joven. Para lograrlo, conceptualizamos y diseñamos todo el ecosistema visual de la iniciativa, declinando la identidad en aplicaciones clave como una campaña estratégica para redes sociales y la gráfica para espacios efímeros o pop-ups. El resultado es una imagen cohesionada y vibrante que revitaliza la percepción de las tiendas de barrio e invita a la participación activa.",
-            "imagenes": [
-                "assets/img/proyectos/pasaporte de barrio/pasaporte.png",
-                 "assets/img/proyectos/pasaporte de barrio/panaderia.png",
-                "assets/img/proyectos/pasaporte de barrio/bar.png"
-            ]
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fotocopyarte/2.jpg"
         },
-         {
-            "id": "infografia",
-            "etiquetas": ["infografía","ilustración de prensa","Adobe Ilustrator"],
-            "año": "2025",
-            "titulo": "Fabrica de la Desinformación",
-            "url": "proyectobase.html?id=infografia",
-            "descripcion": "Desarrollada íntegramente con Adobe Illustrator, esta infografía de prensa ilustra el impacto de la inteligencia artificial en la creación masiva de contenido fraudulento a través de la metáfora visual de una fábrica automatizada. El proyecto transforma datos estadísticos complejos sobre ética digital en una narrativa gráfica accesible, articulando tres ejes críticos: la discriminación algorítmica, las estafas con deepfakes y la proliferación de noticias falsas. Aprovechando al máximo las herramientas vectoriales del software, diseñé una paleta cromática de alto contraste y logré una integración orgánica de los gráficos de datos en la propia ilustración. Así, la composición guía al espectador desde la materia prima de los sesgos hasta la mentira empaquetada, demostrando una sólida capacidad de síntesis conceptual y jerarquización visual para el entorno editorial.",
-            "imagenes": [
-                "assets/img/proyectos/desinformación/infografia.png",
-                 "assets/img/proyectos/desinformación/sinmockup.png"
-            ]
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fotocopyarte/4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "biennale",
+      "etiquetas": [
+        "cartel",
+        "serie",
+        "experimental",
+        "Adobe Ilustrator",
+        "Adobe Photoshop"
+      ],
+      "año": "2025",
+      "titulo": "Pósters Biennale de la Danse de Lyon",
+      "url": "proyectobase.html?id=biennale",
+      "descripcion": "Esta serie de carteles experimentales para la Biennale de la Danse explora la premisa del baile como destructor de barreras. Para capturar la energía del movimiento, desarrollé una tipografía expresiva creada a partir de trazos manuales con tinta china, posteriormente procesados y vectorizados en Illustrator. Esta manipulación gráfica transforma las letras en una metáfora visual de la música, donde el grosor variable representa el volumen, las curvas fluidas simbolizan la melodía y la disposición fragmentada evoca el ritmo. La combinación de esta tipografía gestual con siluetas humanas en acción y una paleta de colores vibrantes da como resultado una composición donde texto y cuerpo bailan juntos, rompiendo los límites del cartel tradicional.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/biennale/los3.png"
         },
-         {
-            "id": "catalalata",
-            "etiquetas": ["packaging","ilustración","catalalata","Adobe Illustrator"],
-            "año": "2025",
-            "titulo": "Catalalata 2024",
-            "url": "proyectobase.html?id=catalalata",
-            "descripcion": "Para el proyecto Catalalata 2024, diseñé una línea de packaging compuesta por tres envases para conservas de mejillones, sardinas y atún. Bajo un concepto visual fresco y divertido, utilicé la ilustración para descontextualizar los productos, transformándolos en elementos lúdicos propios de escenas playeras, como tomar el sol, surfear o construir castillos de arena. A nivel cromático, apliqué una base monocromática en blanco y negro combinada con un color de acento específico para cada variedad. Esta decisión estratégica permitió lograr un equilibrio perfecto entre un acabado elegante y el carácter cercano y amable que requería la marca.",
-            "imagenes": [
-                "assets/img/proyectos/catalalata/catalalata 1.png",
-                 "assets/img/proyectos/catalalata/catalalata 2.png",
-                "assets/img/proyectos/catalalata/catalalata 3.png",
-                "assets/img/proyectos/catalalata/catalalata 4.png"
-            ]
-        }  
-    ]
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/biennale/verde.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/biennale/2.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/biennale/3.png"
+        }
+      ]
+    },
+    {
+      "id": "mundo",
+      "etiquetas": [
+        "editorial",
+        "fanzine",
+        "tipografía",
+        "Julio Verne",
+        "Adobe InDesign"
+      ],
+      "año": "2024",
+      "titulo": "Vuelta al Mundo en 8 Pliegos",
+      "url": "proyectobase.html?id=mundo",
+      "descripcion": "Este fanzine explora el alfabeto latino alrededor del mundo, mostrando cómo los caracteres no alfabéticos reflejan cultura. Adaptando La vuelta al mundo en 80 días, cada página recorre un país distinto cuidando la adaptación y creación de un nuevo recorrido al estilo de Julio Verne. Inspirado en el diseño de Lucille Tenazas, combina tipografía y transparencias con ilustraciones creadas a partir de los caracteres de cada idioma. Usando papel convencional y poliéster genera capas translúcidas que jerarquizan palabras y dan tridimensionalidad. Con un sentido artesanal, como un cuaderno de viaje, encontramos una encuadernación japonesa con hilo fino casi invisible. Invita al lector a viajar entre culturas y sentir a Julio Verne en cada letra y símbolo.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/1.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/2.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/3.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/4.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/5.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/vuelta al mundo/6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dtnt",
+      "etiquetas": [
+        "diseño editorial",
+        "investigación",
+        "tipografía",
+        "Museo Nacional de Artes Decorativas",
+        "Adobe Ilustrator, Photopshop, InDesign",
+        "Blender"
+      ],
+      "año": "2025",
+      "titulo": "DTNT (MNAD)",
+      "url": "proyectobase.html?id=dtnt",
+      "descripcion": "DTNT es un fanzine experimental que desafía la linealidad temporal cruzando la precisión mecánica de un reloj de Joseph Anton Kosler (s. XIX) con la distentio animi de San Agustín. A través de un recorrido táctil y caótico de capas, troqueles y tipografías fragmentadas, la pieza demuestra que el tiempo no se mide, se siente, es relativo, el pasado, presente y futuro colapsan frente a la inmediatez de la era digital. Esta obra , expuesta en la muestra 'Las líneas del diseño' del Museo Nacional de Artes Decorativas (Madrid, mayo-junio 2026), funciona como un dispositivo de resistencia que culmina en un espejo, atrapando el reflejo del lector para frenar su carrera hacia el futuro y obligarle, de golpe, a habitar el presente.",
+       "enlace": {
+        "texto": "Ver vídeo del proyecto",
+        "url": "https://www.youtube.com/watch?v=qQ8MkYBumWs"
+        },
+      "media": [
+        {
+          "tipo": "video",
+          "src": "assets/img/proyectos/fanzine/v.mp4"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fanzine/8.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fanzine/10.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fanzine/9.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fanzine/11.jpg"
+        }
+        
+      ]
+    },
+    {
+      "id": "fw",
+      "etiquetas": [
+        "audiovisual",
+        "reactivo",
+        "Fashion Week Madrid 2026",
+        "Touch Designer",
+        "Resolume",
+        "Adobe AfterEffects"
+      ],
+      "año": "2025",
+      "titulo": "Visuales FW M26",
+      "url": "proyectobase.html?id=fw",
+      "descripcion": "Para la Madrid Fashion Week 2026, codiseñé los visuales del desfile del diseñador Pomperre en un gran proyecto multidisciplinar desarrollado junto a la revista NEO2, la Escuela Superior de Diseño de Madrid y profesionales de escenografía, maquillaje y sonido. Para plasmar la narrativa de la colección, inspirada en El Lago de los Cisnes, creamos una experiencia audiovisual inmersiva y reactiva. La pieza central consistió en un cisne 3D modelado en Blender con texturas de cristal y porcelana, el cual integramos sobre un fondo generativo. Utilizando TouchDesigner y Resolume, programamos un sistema interactivo donde tanto la iluminación del modelado como la profundidad de campo y nitidez de la imagen reaccionaban en tiempo real, resultando en una obra digital viva y dinámica que envolvió y elevó la presentación de la colección. (Fotografía realizada por Marina M. Delgado, Gema Gárper y Jerónimo Álvarez)",
+      "media": [
+        {
+          "tipo": "video",
+          "src": "assets/img/proyectos/fashion/desfile.mp4"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fashion/6.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fashion/7.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fashion/2.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/fashion/4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pasaporte",
+      "etiquetas": [
+        "diseño de servicios",
+        "publicidad",
+        "identidad visual",
+        "Adobe Illustrator",
+        "Procreate",
+        "Adobe InDesign"
+      ],
+      "año": "2025",
+      "titulo": "Pasaporte de Barrio",
+      "url": "proyectobase.html?id=pasaporte",
+      "descripcion": "Desarrollado en codiseño junto a otra diseñadora gráfica, este proyecto consistió en la creación de la identidad visual para 'Pasaporte de Barrio', una iniciativa orientada a fomentar el consumo en el comercio local. Nuestro reto principal fue dotar a este proyecto de una gráfica fresca, divertida y muy amable, pensada específicamente para conectar y acercar el comercio de proximidad a un público joven. Para lograrlo, conceptualizamos y diseñamos todo el ecosistema visual de la iniciativa, declinando la identidad en aplicaciones clave como una campaña estratégica para redes sociales y la gráfica para espacios efímeros o pop-ups. El resultado es una imagen cohesionada y vibrante que revitaliza la percepción de las tiendas de barrio e invita a la participación activa.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/pasaporte de barrio/pasaporte.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/pasaporte de barrio/panaderia.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/pasaporte de barrio/bar.png"
+        }
+      ]
+    },
+    {
+      "id": "infografia",
+      "etiquetas": [
+        "infografía",
+        "ilustración de prensa",
+        "Adobe Ilustrator"
+      ],
+      "año": "2025",
+      "titulo": "Fabrica de la Desinformación",
+      "url": "proyectobase.html?id=infografia",
+      "descripcion": "Desarrollada íntegramente con Adobe Illustrator, esta infografía de prensa ilustra el impacto de la inteligencia artificial en la creación masiva de contenido fraudulento a través de la metáfora visual de una fábrica automatizada. El proyecto transforma datos estadísticos complejos sobre ética digital en una narrativa gráfica accesible, articulando tres ejes críticos: la discriminación algorítmica, las estafas con deepfakes y la proliferación de noticias falsas. Aprovechando al máximo las herramientas vectoriales del software, diseñé una paleta cromática de alto contraste y logré una integración orgánica de los gráficos de datos en la propia ilustración. Así, la composición guía al espectador desde la materia prima de los sesgos hasta la mentira empaquetada, demostrando una sólida capacidad de síntesis conceptual y jerarquización visual para el entorno editorial.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/desinformación/infografia.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/desinformación/sinmockup.png"
+        }
+      ]
+    },
+    {
+      "id": "catalalata",
+      "etiquetas": [
+        "packaging",
+        "ilustración",
+        "catalalata",
+        "Adobe Illustrator"
+      ],
+      "año": "2025",
+      "titulo": "Catalalata 2024",
+      "url": "proyectobase.html?id=catalalata",
+      "descripcion": "Para el proyecto Catalalata 2024, diseñé una línea de packaging compuesta por tres envases para conservas de mejillones, sardinas y atún. Bajo un concepto visual fresco y divertido, utilicé la ilustración para descontextualizar los productos, transformándolos en elementos lúdicos propios de escenas playeras, como tomar el sol, surfear o construir castillos de arena. A nivel cromático, apliqué una base monocromática en blanco y negro combinada con un color de acento específico para cada variedad. Esta decisión estratégica permitió lograr un equilibrio perfecto entre un acabado elegante y el carácter cercano y amable que requería la marca.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/catalalata/catalalata 1.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/catalalata/catalalata 2.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/catalalata/catalalata 3.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/catalalata/catalalata 4.png"
+        }
+      ]
+    },
+     {
+      "id": "armilla",
+      "etiquetas": [
+        "editorial",
+        "grabados",
+        "encuadernación",
+        "literatura"
+      ],
+      "año": "2025",
+      "titulo": "Armilla - Ciudades Invisibles de Ítalo Calvino",
+      "url": "proyectobase.html?id=armilla",
+      "descripcion": "Fanzine experimental inspirado en Armilla, una de las Ciudades Invisibles de Italo Calvino, donde el agua y las mujeres forman parte de un paisaje suspendido entre lo real y lo imaginario. A partir de este universo, el proyecto reinterpreta la belleza femenina a través de la metáfora de las flores: mujeres que crecen y son regadas por los ideales de belleza hasta florecer, para después ser olvidadas cuando comienza su marchitar. La pieza explora esta idea a través del grabado, la estampación en linóleo, el transfer y el gofrado, sobre una selección de papeles artesanales, y se articula mediante una encuadernación japonesa.",
+      "media": [
+        {
+          "tipo": "video",
+          "src": "assets/img/proyectos/armilla/v.mp4"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/armilla/4.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/armilla/2.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/armilla/5.jpg"
+        }
+      ]
+    },
+     {
+      "id": "clasico",
+      "etiquetas": [
+        "editorial",
+        "InDesign",
+        "estilo clásico",
+        "literatura"
+      ],
+      "año": "2025",
+      "titulo": "Diccionario del Diablo (vs. Clásica)",
+      "url": "proyectobase.html?id=clasico",
+      "descripcion": "Versión editorial de El diccionario del diablo de Ambrose Bierce, planteada desde una estética clásica y de tradición literaria. El proyecto desarrolla el diseño integral del libro, incluyendo sobrecubierta, cubierta, guardas y maquetación interior, junto con ilustraciones de apertura de capítulo inspiradas en el lenguaje ornamental de las letras capitulares, reinterpretadas como elementos gráficos. El conjunto busca recuperar el carácter atemporal de las ediciones clásicas y adaptarlo a una propuesta editorial contemporánea.",
+      "media": [
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario clasico/1.jpg"
+        },
+        {
+          "tipo": "video",
+          "src": "assets/img/proyectos/diccionario clasico/v.mp4"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario clasico/3.png"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario clasico/4.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario clasico/5.jpg"
+        }
+      ]
+    },
+     {
+      "id": "experimental",
+      "etiquetas": [
+        "editorial",
+        "Adobe InDesign y Illustrator",
+        "estilo experimental",
+        "literatura",
+        "mezcla analogía y digital"
+      ],
+      "año": "2025",
+      "titulo": "Diccionario del Diablo (vs. Experimental)",
+      "url": "proyectobase.html?id=experimental",
+      "descripcion": "Versión experimental de El diccionario del diablo de Ambrose Bierce, planteada desde un enfoque disruptivo e interactivo. El proyecto abarca el diseño integral de la cubierta y una maquetación interior que desafía las normas editoriales: rompe los márgenes, tacha textos y destruye la retícula de columnas. El concepto visual simula la intervención caótica de un diablillo que ha vandalizado un diccionario clásico, incorporando ilustraciones propias a bolígrafo y rotulador que invaden el espacio. Para completar la experiencia, el libro se presenta en una funda de filtro rojo que, por efecto óptico, hace invisibles las travesuras hechas en este color, un juego que se traslada al interior mediante una lámina móvil del mismo material, invitando al lector a interactuar con el caos de cada página.",
+      "media": [
+        {
+          "tipo": "video",
+          "src": "assets/img/proyectos/diccionario experimental/v.mp4"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario experimental/4.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario experimental/2.5.jpg"
+        },
+        {
+          "tipo": "imagen",
+          "src": "assets/img/proyectos/diccionario experimental/3.5.jpg"
+        }
+      ]
+    }
+  ]
 }
